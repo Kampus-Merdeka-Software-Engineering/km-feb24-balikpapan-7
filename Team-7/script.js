@@ -28,20 +28,25 @@ const generateSubCategoryChart = async () => {
       return acc;
     }, {});
 
-    const labels = Object.keys(aggregatedData);
-    console.log(labels);
-    const values = Object.values(aggregatedData);
-    console.log(values);
+    const dataArray = Object.entries(aggregatedData);
+    dataArray.sort((a, b) => b[1] - a[1]);
 
-    generateChart(labels, values, "Top Selling Products by Sub-Category");
+    const labels = dataArray.map((item) => item[0]);
+    const values = dataArray.map((item) => item[1]);
+
+    generateChart(
+      labels,
+      values,
+      "Top Selling Products by Sub-Category",
+      "sub-category"
+    );
   } catch (error) {
-    alert("Error: " + error.message);
-    console.error("Error generating chart: ", error);
+    alert("Error: " + error);
   }
 };
 
-const generateChart = (labels, values, placeholder) => {
-  const ctx = document.getElementById("myChart").getContext("2d");
+const generateChart = (labels, values, placeholder, chartId) => {
+  const ctx = document.getElementById(chartId).getContext("2d");
 
   new Chart(ctx, {
     type: "bar",
@@ -52,17 +57,13 @@ const generateChart = (labels, values, placeholder) => {
           label: placeholder,
           data: values,
           borderWidth: 1,
-          backgroundColor: "rgba(75, 192, 192, 0.2)",
-          borderColor: "rgba(75, 192, 192, 1)",
+          backgroundColor: "rgb(217, 217, 217)",
+          borderColor: "white",
         },
       ],
     },
     options: {
-      scales: {
-        y: {
-          beginAtZero: true,
-        },
-      },
+      indexAxis: "y",
     },
   });
 };
