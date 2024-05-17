@@ -7,13 +7,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="chart-wrapper">
-      <canvas id="country"></canvas>
-      <canvas id="sub-category"></canvas>
-      <canvas id="category"></canvas>
-      <canvas id="sub-category-revenue"></canvas>
-      <canvas id="sub-category-gender"></canvas>
+    <div class="container">
+      <div class="filter-container">
+        <label for="year-select">Select Year:</label>
+        <select id="year-select">
+          <option value="all">Overall</option>
+        </select>
+      </div>
+
+      <div class="chart-container">
+        <div class="chart-wrapper">
+          <canvas id="bar-chart-country" class="bar-chart"></canvas>
+          <canvas id="bar-chart-sub-category" class="bar-chart"></canvas>
+        </div>
+      </div>
+
+      <canvas id="category-pie-chart" class="pie-chart"></canvas>
+
+      <div class="chart-container">
+        <div class="chart-wrapper">
+          <canvas id="sub-category-gender" class="bar-chart"></canvas>
+          <canvas id="sub-category-age" class="bar-chart"></canvas>
+        </div>
+      </div>
     </div>
+
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
   </body>
