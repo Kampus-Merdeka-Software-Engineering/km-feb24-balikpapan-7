@@ -8,7 +8,11 @@
   font-family: Arial, sans-serif;
 }
 
+body{
+  background-color: black;
+}
+
 .chart-wrapper {
-  width: 600px;
+  width: 1000px;
   height: 800px;
 }
