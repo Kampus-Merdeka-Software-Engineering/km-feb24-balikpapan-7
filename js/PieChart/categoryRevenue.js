@@ -1,4 +1,4 @@
-let chart;
+let categoryRevenueChart;
 
 const create = async () => {
   const data = await fetchJson();
@@ -21,7 +21,7 @@ const create = async () => {
     }
   }
 
-  chart = new Chart(ctx, {
+  categoryRevenueChart = new Chart(ctx, {
     type: "pie",
     data: {
       labels: labels,

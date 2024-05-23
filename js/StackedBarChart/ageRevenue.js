@@ -1,4 +1,4 @@
-let chart;
+let ageRevenueChart;
 
 const create = async () => {
   const data = await fetchJson();
@@ -39,7 +39,7 @@ const create = async () => {
     return totalB - totalA; // Sort in descending order
   });
 
-  chart = new Chart(ctx, {
+  ageRevenueChart = new Chart(ctx, {
     type: "bar",
     data: chartData,
     options: {

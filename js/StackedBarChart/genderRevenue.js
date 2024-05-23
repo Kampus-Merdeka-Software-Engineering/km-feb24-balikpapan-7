@@ -1,4 +1,4 @@
-let chart;
+let genderRevenueChart;
 
 const create = async () => {
   const data = await fetchJson();
@@ -58,7 +58,7 @@ const create = async () => {
     })),
   };
 
-  chart = new Chart(ctx, {
+  genderRevenueChart = new Chart(ctx, {
     type: "bar",
     data: chartData,
     options: {
