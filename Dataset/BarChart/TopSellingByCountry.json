@@ -1,0 +1,267 @@
+{
+    "2011": {
+      "Australia": {
+        "Accessories": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Clothing": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Bikes": {"Revenue": 2529914, "Cost": 1819448, "Profit": 710466},
+        "Grand Total": {"Revenue": 2529914, "Cost": 1819448, "Profit": 710466}
+      },
+      "Canada": {
+        "Accessories": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Clothing": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Bikes": {"Revenue": 789798, "Cost": 486304, "Profit": 303494},
+        "Grand Total": {"Revenue": 789798, "Cost": 486304, "Profit": 303494}
+      },
+      "France": {
+        "Accessories": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Clothing": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Bikes": {"Revenue": 946624, "Cost": 669251, "Profit": 277373},
+        "Grand Total": {"Revenue": 946624, "Cost": 669251, "Profit": 277373}
+      },
+      "Germany": {
+        "Accessories": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Clothing": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Bikes": {"Revenue": 833603, "Cost": 563115, "Profit": 270488},
+        "Grand Total": {"Revenue": 833603, "Cost": 563115, "Profit": 270488}
+      },
+      "United Kingdom": {
+        "Accessories": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Clothing": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Bikes": {"Revenue": 823481, "Cost": 519664, "Profit": 303817},
+        "Grand Total": {"Revenue": 823481, "Cost": 519664, "Profit": 303817}
+      },
+      "United States": {
+        "Accessories": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Clothing": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Bikes": {"Revenue": 3041468, "Cost": 2025805, "Profit": 1015663},
+        "Grand Total": {"Revenue": 3041468, "Cost": 2025805, "Profit": 1015663}
+      },
+      "Total": {
+        "Accessories": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Clothing": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Bikes": {"Revenue": 8964888, "Cost": 6083587, "Profit": 2881301},
+        "Grand Total": {"Revenue": 8964888, "Cost": 6083587, "Profit": 2881301}
+      }
+    },
+    "2012": {
+      "Australia": {
+        "Accessories": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Clothing": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Bikes": {"Revenue": 2557511, "Cost": 1841420, "Profit": 716091},
+        "Grand Total": {"Revenue": 2557511, "Cost": 1841420, "Profit": 716091}
+      },
+      "Canada": {
+        "Accessories": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Clothing": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Bikes": {"Revenue": 835527, "Cost": 515562, "Profit": 319965},
+        "Grand Total": {"Revenue": 835527, "Cost": 515562, "Profit": 319965}
+      },
+      "France": {
+        "Accessories": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Clothing": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Bikes": {"Revenue": 962153, "Cost": 682302, "Profit": 279851},
+        "Grand Total": {"Revenue": 962153, "Cost": 682302, "Profit": 279851}
+      },
+      "Germany": {
+        "Accessories": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Clothing": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Bikes": {"Revenue": 835188, "Cost": 563908, "Profit": 271280},
+        "Grand Total": {"Revenue": 835188, "Cost": 563908, "Profit": 271280}
+      },
+      "United Kingdom": {
+        "Accessories": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Clothing": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Bikes": {"Revenue": 834885, "Cost": 525968, "Profit": 308917},
+        "Grand Total": {"Revenue": 834885, "Cost": 525968, "Profit": 308917}
+      },
+      "United States": {
+        "Accessories": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Clothing": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Bikes": {"Revenue": 3150719, "Cost": 2094830, "Profit": 1055889},
+        "Grand Total": {"Revenue": 3150719, "Cost": 2094830, "Profit": 1055889}
+      },
+      "Total": {
+        "Accessories": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Clothing": {"Revenue": 0, "Cost": 0, "Profit": 0},
+        "Bikes": {"Revenue": 9175983, "Cost": 6223990, "Profit": 2951993},
+        "Grand Total": {"Revenue": 9175983, "Cost": 6223990, "Profit": 2951993}
+      }
+    },
+    "2013": {
+      "Australia": {
+        "Accessories": {"Revenue": 624112, "Cost": 279080, "Profit": 345032},
+        "Bikes": {"Revenue": 3050202, "Cost": 2167525, "Profit": 882677},
+        "Clothing": {"Revenue": 433156, "Cost": 321045, "Profit": 112111},
+        "Grand Total": {"Revenue": 4107470, "Cost": 2767650, "Profit": 1339820}
+      },
+      "Canada": {
+        "Accessories": {"Revenue": 529972, "Cost": 200842, "Profit": 329130},
+        "Bikes": {"Revenue": 589502, "Cost": 350714, "Profit": 238788},
+        "Clothing": {"Revenue": 324063, "Cost": 175829, "Profit": 148234},
+        "Grand Total": {"Revenue": 1443537, "Cost": 727385, "Profit": 716152}
+      },
+      "France": {
+        "Accessories": {"Revenue": 303965, "Cost": 133313, "Profit": 170652},
+        "Bikes": {"Revenue": 959578, "Cost": 666425, "Profit": 293153},
+        "Clothing": {"Revenue": 168327, "Cost": 117275, "Profit": 51052},
+        "Grand Total": {"Revenue": 1431870, "Cost": 917013, "Profit": 514857}
+      },
+      "Germany": {
+        "Accessories": {"Revenue": 312863, "Cost": 129472, "Profit": 183391},
+        "Bikes": {"Revenue": 1015098, "Cost": 675715, "Profit": 339383},
+        "Clothing": {"Revenue": 124743, "Cost": 92339, "Profit": 32404},
+        "Grand Total": {"Revenue": 1452704, "Cost": 897526, "Profit": 555178}
+      },
+      "United Kingdom": {
+        "Accessories": {"Revenue": 402401, "Cost": 156314, "Profit": 246087},
+        "Bikes": {"Revenue": 1262663, "Cost": 784390, "Profit": 478273},
+        "Clothing": {"Revenue": 203732, "Cost": 139261, "Profit": 64471},
+        "Grand Total": {"Revenue": 1868796, "Cost": 1079965, "Profit": 788831}
+      },
+      "United States": {
+        "Accessories": {"Revenue": 1210902, "Cost": 499963, "Profit": 710939},
+        "Bikes": {"Revenue": 2981744, "Cost": 1923608, "Profit": 1058136},
+        "Clothing": {"Revenue": 743014, "Cost": 467719, "Profit": 275295},
+        "Grand Total": {"Revenue": 4935660, "Cost": 2891290, "Profit": 2044370}
+      },
+      "Total": {
+        "Accessories": {"Revenue": 3384215, "Cost": 1398984, "Profit": 1985231},
+        "Bikes": {"Revenue": 9858787, "Cost": 6568377, "Profit": 3290410},
+        "Clothing": {"Revenue": 1997035, "Cost": 1313468, "Profit": 683567},
+        "Grand Total": {"Revenue": 15240037, "Cost": 9280829, "Profit": 5959208}
+      }
+    },
+    "2014": {
+      "Australia": {
+        "Accessories": {"Revenue": 769797, "Cost": 344274, "Profit": 425523},
+        "Bikes": {"Revenue": 1655516, "Cost": 1186065, "Profit": 469451},
+        "Clothing": {"Revenue": 377529, "Cost": 277030, "Profit": 100499},
+        "Grand Total": {"Revenue": 2802842, "Cost": 1807369, "Profit": 995473}
+      },
+      "Canada": {
+        "Accessories": {"Revenue": 626195, "Cost": 237000, "Profit": 389195},
+        "Bikes": {"Revenue": 471155, "Cost": 282535, "Profit": 188620},
+        "Clothing": {"Revenue": 374172, "Cost": 213851, "Profit": 160321},
+        "Grand Total": {"Revenue": 1471522, "Cost": 733386, "Profit": 738136}
+      },
+      "France": {
+        "Accessories": {"Revenue": 402775, "Cost": 176722, "Profit": 226053},
+        "Bikes": {"Revenue": 810165, "Cost": 560613, "Profit": 249552},
+        "Clothing": {"Revenue": 198160, "Cost": 152066, "Profit": 46094},
+        "Grand Total": {"Revenue": 1411100, "Cost": 889401, "Profit": 521699}
+      },
+      "Germany": {
+        "Accessories": {"Revenue": 473131, "Cost": 196367, "Profit": 276764},
+        "Bikes": {"Revenue": 1030713, "Cost": 674094, "Profit": 356619},
+        "Clothing": {"Revenue": 198664, "Cost": 146858, "Profit": 51806},
+        "Grand Total": {"Revenue": 1702508, "Cost": 1017319, "Profit": 685189}
+      },
+      "United Kingdom": {
+        "Accessories": {"Revenue": 549347, "Cost": 213793, "Profit": 335554},
+        "Bikes": {"Revenue": 1202055, "Cost": 740751, "Profit": 461304},
+        "Clothing": {"Revenue": 262642, "Cost": 176801, "Profit": 85841},
+        "Grand Total": {"Revenue": 2014044, "Cost": 1131345, "Profit": 882699}
+      },
+      "United States": {
+        "Accessories": {"Revenue": 1472347, "Cost": 609923, "Profit": 862424},
+        "Bikes": {"Revenue": 2441639, "Cost": 1575685, "Profit": 865954},
+        "Clothing": {"Revenue": 836722, "Cost": 524209, "Profit": 312513},
+        "Grand Total": {"Revenue": 4750708, "Cost": 2709817, "Profit": 2040891}
+      },
+      "Total": {
+        "Accessories": {"Revenue": 4293592, "Cost": 1778079, "Profit": 2515513},
+        "Bikes": {"Revenue": 7611243, "Cost": 5019743, "Profit": 2591500},
+        "Clothing": {"Revenue": 2247889, "Cost": 1490815, "Profit": 757074},
+        "Grand Total": {"Revenue": 14152724, "Cost": 8288637, "Profit": 5864087}
+      }
+    },
+    "2015": {
+      "Australia": {
+        "Accessories": {"Revenue": 607396, "Cost": 271575, "Profit": 335821},
+        "Bikes": {"Revenue": 4677632, "Cost": 3321475, "Profit": 1356157},
+        "Clothing": {"Revenue": 427311, "Cost": 316943, "Profit": 110368},
+        "Grand Total": {"Revenue": 5712339, "Cost": 3909993, "Profit": 1802346}
+      },
+      "Canada": {
+        "Accessories": {"Revenue": 517711, "Cost": 196206, "Profit": 321505},
+        "Bikes": {"Revenue": 901419, "Cost": 537274, "Profit": 364145},
+        "Clothing": {"Revenue": 312824, "Cost": 170094, "Profit": 142730},
+        "Grand Total": {"Revenue": 1731954, "Cost": 903574, "Profit": 828380}
+      },
+      "France": {
+        "Accessories": {"Revenue": 293706, "Cost": 128812, "Profit": 164894},
+        "Bikes": {"Revenue": 1422728, "Cost": 987005, "Profit": 435723},
+        "Clothing": {"Revenue": 161494, "Cost": 112814, "Profit": 48680},
+        "Grand Total": {"Revenue": 1877928, "Cost": 1228631, "Profit": 649297}
+      },
+      "Germany": {
+        "Accessories": {"Revenue": 302927, "Cost": 125429, "Profit": 177498},
+        "Bikes": {"Revenue": 1508441, "Cost": 1000473, "Profit": 507968},
+        "Clothing": {"Revenue": 119723, "Cost": 88687, "Profit": 31036},
+        "Grand Total": {"Revenue": 1931091, "Cost": 1214589, "Profit": 716502}
+      },
+      "United Kingdom": {
+        "Accessories": {"Revenue": 388624, "Cost": 150953, "Profit": 237671},
+        "Bikes": {"Revenue": 1900942, "Cost": 1182410, "Profit": 718532},
+        "Clothing": {"Revenue": 194615, "Cost": 133391, "Profit": 61224},
+        "Grand Total": {"Revenue": 2484181, "Cost": 1466754, "Profit": 1017427}
+      },
+      "United States": {
+        "Accessories": {"Revenue": 1175590, "Cost": 485439, "Profit": 690151},
+        "Bikes": {"Revenue": 4387921, "Cost": 2831519, "Profit": 1556402},
+        "Clothing": {"Revenue": 722987, "Cost": 454929, "Profit": 268058},
+        "Grand Total": {"Revenue": 6286498, "Cost": 3771887, "Profit": 2514611}
+      },
+      "Total": {
+        "Accessories": {"Revenue": 3285954, "Cost": 1358414, "Profit": 1927540},
+        "Bikes": {"Revenue": 14799083, "Cost": 9860156, "Profit": 4938927},
+        "Clothing": {"Revenue": 1938954, "Cost": 1276858, "Profit": 662096},
+        "Grand Total": {"Revenue": 20023991, "Cost": 12495428, "Profit": 7528563}
+      }
+    },
+    "2016": {
+      "Australia": {
+        "Accessories": {"Revenue": 745100, "Cost": 333223, "Profit": 411877},
+        "Bikes": {"Revenue": 2482043, "Cost": 1779528, "Profit": 702515},
+        "Clothing": {"Revenue": 364840, "Cost": 267398, "Profit": 97442},
+        "Grand Total": {"Revenue": 3591983, "Cost": 2380149, "Profit": 1211834}
+      },
+      "Canada": {
+        "Accessories": {"Revenue": 609062, "Cost": 230509, "Profit": 378553},
+        "Bikes": {"Revenue": 687602, "Cost": 411652, "Profit": 275950},
+        "Clothing": {"Revenue": 366736, "Cost": 210070, "Profit": 156666},
+        "Grand Total": {"Revenue": 1663400, "Cost": 852231, "Profit": 811169}
+      },
+      "France": {
+        "Accessories": {"Revenue": 387607, "Cost": 169990, "Profit": 217617},
+        "Bikes": {"Revenue": 1222877, "Cost": 847782, "Profit": 375095},
+        "Clothing": {"Revenue": 192713, "Cost": 148220, "Profit": 44493},
+        "Grand Total": {"Revenue": 1803197, "Cost": 1165992, "Profit": 637205}
+      },
+      "Germany": {
+        "Accessories": {"Revenue": 459897, "Cost": 190827, "Profit": 269070},
+        "Bikes": {"Revenue": 1569739, "Cost": 1028175, "Profit": 541564},
+        "Clothing": {"Revenue": 193866, "Cost": 143142, "Profit": 50724},
+        "Grand Total": {"Revenue": 2223502, "Cost": 1362144, "Profit": 861358}
+      },
+      "United Kingdom": {
+        "Accessories": {"Revenue": 532651, "Cost": 207262, "Profit": 325389},
+        "Bikes": {"Revenue": 1832968, "Cost": 1129672, "Profit": 703296},
+        "Clothing": {"Revenue": 255190, "Cost": 171713, "Profit": 83477},
+        "Grand Total": {"Revenue": 2620809, "Cost": 1508647, "Profit": 1112162}
+      },
+      "United States": {
+        "Accessories": {"Revenue": 1419914, "Cost": 588327, "Profit": 831587},
+        "Bikes": {"Revenue": 3576921, "Cost": 2310196, "Profit": 1266725},
+        "Clothing": {"Revenue": 813659, "Cost": 509751, "Profit": 303908},
+        "Grand Total": {"Revenue": 5810494, "Cost": 3408274, "Profit": 2402220}
+      },
+      "Total": {
+        "Accessories": {"Revenue": 4154231, "Cost": 1720138, "Profit": 2434093},
+        "Bikes": {"Revenue": 11372150, "Cost": 7507005, "Profit": 3865145},
+        "Clothing": {"Revenue": 2187004, "Cost": 1450294, "Profit": 736710},
+        "Grand Total": {"Revenue": 17713385, "Cost": 10677437, "Profit": 7035948}
+      }
+    }
+  }
+  

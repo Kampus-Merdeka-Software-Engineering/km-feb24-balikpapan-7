@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Team 7</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Bar Chart -->
+      <div class="bar-chart-container">
+        <div class="sub-categories-chart">
+          <div class="filter">
+            <label for="sub-category-chart">Choose a Year:</label>
+            <select name="sub-category-chart" id="sub-category-chart">
+              <option value="">2011-2016</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+            </select>
+            <input
+              type="checkbox"
+              id="sort-sub-category"
+              name="sort-sub-category"
+              value="true"
+            />
+            <label for="sort-sub-category"> Sort</label><br />
+          </div>
+          <canvas id="sub-category" class="bar-chart"></canvas>
+        </div>
+        <div class="country-chart">
+          <div class="filter">
+            <label for="country-chart">Choose a Year:</label>
+            <select name="country-chart" id="country-chart">
+              <option value="">2011-2016</option>
+              <option value="2011">2011</option>
+              <option value="2012">2012</option>
+              <option value="2013">2013</option>
+              <option value="2014">2014</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+            </select>
+            <input
+              type="checkbox"
+              id="sort-country"
+              name="sort-country-category"
+              value="true"
+            />
+            <label for="sort-country-label"> Sort</label><br />
+          </div>
+          <canvas id="country" class="bar-chart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!--<canvas id="age-revenue"></canvas>
+    <script src="./js/StackedBarChart/ageRevenue.js"></script>
+    -->
+    <!-- <canvas id="gender-revenue"></canvas>
+    <script src="./js/StackedBarChart/genderRevenue.js"></script> -->
+
+    <!-- <canvas id="category-revenue"></canvas>
+    <script src="./js/PieChart/categoryRevenue.js"></script> -->
+
+    <script src="./js/BarChart/subCategory.js"></script>
+    <script src="./js/BarChart/countryCategory.js"></script>
+  </body>
+</html>
