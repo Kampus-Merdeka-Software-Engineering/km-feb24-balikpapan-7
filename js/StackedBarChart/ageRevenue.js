@@ -86,4 +86,4 @@ const ageFetch = async () => {
   }
 };
 
-createAgeStackedChart();
+

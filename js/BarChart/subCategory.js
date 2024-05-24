@@ -2,35 +2,7 @@ let selectedYearSubCategory = "";
 let isSortSubCategory = false;
 let chartSubCategory;
 
-document.addEventListener("DOMContentLoaded", () => {
-  const selectYearSubCategory = document.getElementById("sub-category-chart");
-  const sortCheckboxSubCategory = document.getElementById("sort-sub-category");
-  const selectYearCountry = document.getElementById("country-chart");
-  const sortCheckboxCountry = document.getElementById("sort-country");
 
-  createSubCategory();
-  createCountry();
-
-  selectYearSubCategory.addEventListener("change", (event) => {
-    selectedYearSubCategory = event.target.value;
-    createSubCategory();
-  });
-
-  sortCheckboxSubCategory.addEventListener("change", (event) => {
-    isSortSubCategory = event.target.checked;
-    createSubCategory();
-  });
-
-  selectYearCountry.addEventListener("change", (event) => {
-    selectedYearCountry = event.target.value;
-    createCountry();
-  });
-
-  sortCheckboxCountry.addEventListener("change", (event) => {
-    isSortCountry = event.target.checked;
-    createCountry();
-  });
-});
 
 const createSubCategory = async () => {
   const data = await fetchSubCategoryJson();

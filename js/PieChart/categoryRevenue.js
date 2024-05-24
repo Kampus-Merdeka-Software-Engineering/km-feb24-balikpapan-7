@@ -62,5 +62,3 @@ const fetchPieChartData = async () => {
     throw new Error("Error fetching data: " + err);
   }
 };
-
-createCategoryPieChart();
