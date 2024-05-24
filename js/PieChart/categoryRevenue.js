@@ -1,7 +1,7 @@
 let categoryRevenueChart;
 
-const create = async () => {
-  const data = await fetchJson();
+const createCategoryPieChart = async () => {
+  const data = await fetchPieChartData();
 
   const ctx = document.getElementById("category-revenue").getContext("2d");
   const labels = [];
@@ -51,7 +51,7 @@ const create = async () => {
 };
 
 // Fetch dataset data
-const fetchJson = async () => {
+const fetchPieChartData = async () => {
   try {
     const res = await fetch(
       "./Dataset/PieChart/TopSellingByCategoryRevenue.json"
@@ -63,4 +63,4 @@ const fetchJson = async () => {
   }
 };
 
-create();
+createCategoryPieChart();

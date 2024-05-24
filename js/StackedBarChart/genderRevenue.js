@@ -1,7 +1,7 @@
 let genderRevenueChart;
 
-const create = async () => {
-  const data = await fetchJson();
+const createGenderChart = async () => {
+  const data = await fetchAgeJson();
 
   // Initialize objects to accumulate revenue by gender and subcategory
   const genderRevenue = {
@@ -120,7 +120,7 @@ const getColor = (label) => {
 };
 
 // Fetch dataset data
-const fetchJson = async () => {
+const fetchAgeJson = async () => {
   try {
     const res = await fetch(
       "./Dataset/StackedBarChart/TopSellingByGender.json"
@@ -132,4 +132,4 @@ const fetchJson = async () => {
   }
 };
 
-create();
+createGenderChart();
