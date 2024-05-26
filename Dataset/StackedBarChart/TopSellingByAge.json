@@ -1,0 +1,136 @@
+{
+  "Product_Category": {
+    "Accessories": {
+      "Bike Racks": {
+        "Adults (35-64)": 2850,
+        "Seniors (64+)": 8,
+        "Young Adults (25-34)": 1520,
+        "Youth (<25)": 363,
+        "Grand Total": 4741
+      },
+      "Bike Stands": {
+        "Adults (35-64)": 1215,
+        "Seniors (64+)": 18,
+        "Young Adults (25-34)": 723,
+        "Youth (<25)": 456,
+        "Grand Total": 2412
+      },
+      "Bottles and Cages": {
+        "Adults (35-64)": 120444,
+        "Seniors (64+)": 1225,
+        "Young Adults (25-34)": 82129,
+        "Youth (<25)": 37928,
+        "Grand Total": 241726
+      },
+      "Cleaners": {
+        "Adults (35-64)": 14400,
+        "Seniors (64+)": 200,
+        "Young Adults (25-34)": 8554,
+        "Youth (<25)": 4420,
+        "Grand Total": 27574
+      },
+      "Fenders": {
+        "Adults (35-64)": 32836,
+        "Seniors (64+)": 488,
+        "Young Adults (25-34)": 19982,
+        "Youth (<25)": 8832,
+        "Grand Total": 62138
+      },
+      "Helmets": {
+        "Adults (35-64)": 94030,
+        "Seniors (64+)": 1270,
+        "Young Adults (25-34)": 61015,
+        "Youth (<25)": 25291,
+        "Grand Total": 181606
+      },
+      "Hydration Packs": {
+        "Adults (35-64)": 11102,
+        "Seniors (64+)": 190,
+        "Young Adults (25-34)": 5891,
+        "Youth (<25)": 2731,
+        "Grand Total": 19914
+      },
+      "Tires and Tubes": {
+        "Adults (35-64)": 248850,
+        "Seniors (64+)": 4928,
+        "Young Adults (25-34)": 166570,
+        "Youth (<25)": 93703,
+        "Grand Total": 514051
+      }
+    },
+    "Bikes": {
+      "Mountain Bikes": {
+        "Adults (35-64)": 5822,
+        "Seniors (64+)": 35,
+        "Young Adults (25-34)": 4562,
+        "Youth (<25)": 1573,
+        "Grand Total": 11992
+      },
+      "Road Bikes": {
+        "Adults (35-64)": 9277,
+        "Seniors (64+)": 36,
+        "Young Adults (25-34)": 7441,
+        "Youth (<25)": 3017,
+        "Grand Total": 19771
+      },
+      "Touring Bikes": {
+        "Adults (35-64)": 2475,
+        "Seniors (64+)": 9,
+        "Young Adults (25-34)": 1742,
+        "Youth (<25)": 422,
+        "Grand Total": 4648
+      }
+    },
+    "Clothing": {
+      "Caps": {
+        "Adults (35-64)": 33027,
+        "Seniors (64+)": 268,
+        "Young Adults (25-34)": 23738,
+        "Youth (<25)": 10235,
+        "Grand Total": 67268
+      },
+      "Gloves": {
+        "Adults (35-64)": 20656,
+        "Seniors (64+)": 216,
+        "Young Adults (25-34)": 12728,
+        "Youth (<25)": 6378,
+        "Grand Total": 39978
+      },
+      "Jerseys": {
+        "Adults (35-64)": 44469,
+        "Seniors (64+)": 468,
+        "Young Adults (25-34)": 31130,
+        "Youth (<25)": 12058,
+        "Grand Total": 88125
+      },
+      "Shorts": {
+        "Adults (35-64)": 15377,
+        "Seniors (64+)": 70,
+        "Young Adults (25-34)": 7566,
+        "Youth (<25)": 4155,
+        "Grand Total": 27168
+      },
+      "Socks": {
+        "Adults (35-64)": 8046,
+        "Seniors (64+)": 205,
+        "Young Adults (25-34)": 6674,
+        "Youth (<25)": 2753,
+        "Grand Total": 17678
+      },
+      "Vests": {
+        "Adults (35-64)": 7541,
+        "Seniors (64+)": 243,
+        "Young Adults (25-34)": 4910,
+        "Youth (<25)": 1832,
+        "Grand Total": 14526
+      }
+    }
+  },
+  "Grand Total": {
+    "Adults (35-64)": 672417,
+    "Seniors (64+)": 9877,
+    "Young Adults (25-34)": 446875,
+    "Youth (<25)": 216147,
+    "Grand Total": 1345316
+  }
+}

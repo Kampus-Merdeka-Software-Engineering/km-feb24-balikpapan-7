@@ -1,0 +1,122 @@
+{
+    "Product_Category": {
+      "Accessories": {
+        "Sub_Category": {
+          "Bike Racks": {
+            "F": 2131,
+            "M": 2610,
+            "Grand Total": 4741
+          },
+          "Bike Stands": {
+            "F": 1167,
+            "M": 1245,
+            "Grand Total": 2412
+          },
+          "Bottles and Cages": {
+            "F": 118184,
+            "M": 123542,
+            "Grand Total": 241726
+          },
+          "Cleaners": {
+            "F": 13623,
+            "M": 13951,
+            "Grand Total": 27574
+          },
+          "Fenders": {
+            "F": 28020,
+            "M": 34118,
+            "Grand Total": 62138
+          },
+          "Helmets": {
+            "F": 85190,
+            "M": 96416,
+            "Grand Total": 181606
+          },
+          "Hydration Packs": {
+            "F": 9918,
+            "M": 9996,
+            "Grand Total": 19914
+          },
+          "Tires and Tubes": {
+            "F": 248854,
+            "M": 265197,
+            "Grand Total": 514051
+          }
+        },
+        "Total": {
+          "F": 507087,
+          "M": 547075,
+          "Grand Total": 1054162
+        }
+      },
+      "Bikes": {
+        "Sub_Category": {
+          "Mountain Bikes": {
+            "F": 6060,
+            "M": 5932,
+            "Grand Total": 11992
+          },
+          "Road Bikes": {
+            "F": 9676,
+            "M": 10095,
+            "Grand Total": 19771
+          },
+          "Touring Bikes": {
+            "F": 2313,
+            "M": 2335,
+            "Grand Total": 4648
+          }
+        },
+        "Total": {
+          "F": 18049,
+          "M": 18362,
+          "Grand Total": 36411
+        }
+      },
+      "Clothing": {
+        "Sub_Category": {
+          "Caps": {
+            "F": 33643,
+            "M": 33625,
+            "Grand Total": 67268
+          },
+          "Gloves": {
+            "F": 17875,
+            "M": 22103,
+            "Grand Total": 39978
+          },
+          "Jerseys": {
+            "F": 41099,
+            "M": 47026,
+            "Grand Total": 88125
+          },
+          "Shorts": {
+            "F": 12828,
+            "M": 14340,
+            "Grand Total": 27168
+          },
+          "Socks": {
+            "F": 8537,
+            "M": 9141,
+            "Grand Total": 17678
+          },
+          "Vests": {
+            "F": 6615,
+            "M": 7911,
+            "Grand Total": 14526
+          }
+        },
+        "Total": {
+          "F": 120597,
+          "M": 134146,
+          "Grand Total": 254743
+        }
+      }
+    },
+    "Grand Total": {
+      "F": 645733,
+      "M": 699583,
+      "Grand Total": 1345316
+    }
+  }
+  
