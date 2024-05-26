@@ -69,6 +69,107 @@
   background-color: #22ff00;
 }
 
+.datatable-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.dataTable {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.dataTable th,
+.dataTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.dataTable th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.dataTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.dataTable tr:hover {
+  background-color: #ddd;
+}
+
+/* filtring dropdown checkbox */
+.multiselect {
+  width: 100%;
+  position: relative;
+  padding: 12px;
+  box-sizing: border-box;
+}
+.selectBoxCategory select,
+.selectBoxCountries select,
+.selectBoxGender select,
+.selectBoxAge select {
+  width: 100%;
+  padding: 10px;
+}
+.overSelect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#categoryCheckboxes,
+#countriesCheckboxes,
+#genderCheckboxes,
+#ageCheckboxes {
+  display: none;
+  position: absolute;
+  border: 1px gray solid;
+  border-radius: 4px;
+  width: 120%;
+  background-color: white;
+  z-index: 10;
+  top: 90%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+#categoryCheckboxes label,
+#countriesCheckboxes label,
+#genderCheckboxes label,
+#ageCheckboxes label {
+  font-weight: 400;
+  font-size: 15px;
+  display: block;
+  color: black;
+  padding: 4px;
+}
+.multiSelectCategory,
+.multiSelectCountries,
+.multiSelectGender,
+.multiSelectAge {
+  width: 100%;
+}
+.selectBoxCategory:hover,
+.selectBoxCountries:hover,
+.selectBoxGender:hover,
+.selectBoxAge:hover {
+  cursor: pointer;
+}
+.displayerDropdownCheckbox {
+  display: block !important;
+  border: 1px solid black;
+}
+.container-filtering-category {
+  display: flex;
+  justify-content: space-around;
+}
+
 @media screen and (max-width: 768px) {
   .bar-chart-container {
     flex-direction: column;
@@ -96,5 +197,11 @@
   .filter label {
     margin-right: 0;
     margin-bottom: 5px;
+  }
+
+  .datatable-container {
+    width: 1000px !important;
+    height: 800px !important;
+    background-color: tomato;
   }
 }

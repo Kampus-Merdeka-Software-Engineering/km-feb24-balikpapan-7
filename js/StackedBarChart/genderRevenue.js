@@ -1,15 +1,14 @@
 let genderRevenueChart;
 
 const createGenderChart = async () => {
-  const data = await fetchAgeJson();
+  const data = await fetchGenderJson();
 
-  // Initialize objects to accumulate revenue by gender and subcategory
   const genderRevenue = {
     MALE: {},
     FEMALE: {},
   };
 
-  // Function to traverse and accumulate revenue data
+  // Categorize data for each gender
   const accumulateRevenue = (categoryData) => {
     for (const subCategory in categoryData.Sub_Category) {
       const subCategoryData = categoryData.Sub_Category[subCategory];
@@ -19,14 +18,11 @@ const createGenderChart = async () => {
         (genderRevenue["MALE"][subCategory] || 0) + subCategoryData.M;
     }
   };
-
-  // Traverse each category
   for (const category in data.Product_Category) {
     const categoryData = data.Product_Category[category];
     accumulateRevenue(categoryData);
   }
 
-  // Prepare data for the chart
   const labels = Object.keys(genderRevenue["FEMALE"]);
   const femaleValues = labels.map((label) => genderRevenue["FEMALE"][label]);
   const maleValues = labels.map((label) => genderRevenue["MALE"][label]);
@@ -38,66 +34,86 @@ const createGenderChart = async () => {
     maleValue: maleValues[index],
   }));
 
-  // Sort the combined data based on the total value (femaleValue + maleValue)
+  // Sort data from the highest to lowest
   combinedData.sort((a, b) =>
     a.femaleValue + a.maleValue > b.femaleValue + b.maleValue ? -1 : 1
   );
 
-  // Reassign sorted labels and values
+  // creating the chart
   const sortedLabels = combinedData.map((item) => item.label);
   const sortedFemaleValues = combinedData.map((item) => item.femaleValue);
   const sortedMaleValues = combinedData.map((item) => item.maleValue);
 
   const ctx = document.getElementById("gender-revenue").getContext("2d");
-  const chartData = {
-    labels: ["FEMALE", "MALE"],
-    datasets: sortedLabels.map((label, index) => ({
-      label: label,
-      data: [sortedFemaleValues[index], sortedMaleValues[index]],
-      backgroundColor: getColor(label),
-    })),
+
+  const updateChart = () => {
+    const checkedCheckboxes = Array.from(
+      document.querySelectorAll(
+        "#genderCheckboxes input[type='checkbox']:checked"
+      )
+    ).map((checkbox) => checkbox.value);
+
+    const chartData = {
+      labels: checkedCheckboxes,
+      datasets: sortedLabels.map((label, index) => ({
+        label: label,
+        data: [sortedFemaleValues[index], sortedMaleValues[index]],
+        backgroundColor: getColor(label),
+      })),
+    };
+
+    // Destroy chart if already created
+    if (genderRevenueChart) {
+      genderRevenueChart.destroy();
+    }
+
+    genderRevenueChart = new Chart(ctx, {
+      type: "bar",
+      data: chartData,
+      options: {
+        indexAxis: "y",
+        responsive: true,
+        plugins: {
+          legend: {
+            position: "top",
+          },
+          title: {
+            display: true,
+            text: "Top Selling Products by Gender (Revenue)",
+          },
+        },
+        scales: {
+          x: {
+            stacked: true,
+            grid: {
+              borderDash: [5, 5],
+            },
+          },
+          y: {
+            stacked: true,
+            ticks: {
+              color: "black",
+            },
+            grid: {
+              borderDash: [5, 5],
+            },
+          },
+        },
+      },
+    });
   };
 
-  genderRevenueChart = new Chart(ctx, {
-    type: "bar",
-    data: chartData,
-    options: {
-      indexAxis: "y",
-      responsive: true,
-      plugins: {
-        legend: {
-          position: "top",
-        },
-        title: {
-          display: true,
-          text: "Top Selling Products by Gender (Revenue)",
-        },
-      },
-      scales: {
-        x: {
-          stacked: true,
-          grid: {
-            borderDash: [5, 5],
-          },
-        },
-        y: {
-          stacked: true,
-          ticks: {
-            color: "black",
-          },
-          grid: {
-            borderDash: [5, 5],
-          },
-        },
-      },
-    },
-  });
+  updateChart();
+
+  document
+    .querySelectorAll('#genderCheckboxes input[type="checkbox"]')
+    .forEach((checkbox) => {
+      checkbox.addEventListener("change", updateChart);
+    });
 };
 
-
-
 // Fetch dataset data
-const fetchAgeJson = async () => {
+const fetchGenderJson = async () => {
   try {
     const res = await fetch(
       "./Dataset/StackedBarChart/TopSellingByGender.json"
@@ -108,5 +124,3 @@ const fetchAgeJson = async () => {
     throw new Error("Error fetching data: " + err);
   }
 };
-
-

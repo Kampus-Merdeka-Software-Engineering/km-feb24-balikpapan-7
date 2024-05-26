@@ -9,15 +9,10 @@ const createCategoryPieChart = async () => {
 
   const productCategories = data.Product_Category;
   for (const category in productCategories) {
-    for (const subCategory in productCategories[category].Sub_Category) {
+    const subCategories = productCategories[category].Sub_Category;
+    for (const subCategory in subCategories) {
       labels.push(subCategory);
-      values.push(
-        parseFloat(
-          productCategories[category].Sub_Category[subCategory][
-            "Sum of Revenue2"
-          ]
-        )
-      );
+      values.push(parseFloat(subCategories[subCategory]["Sum of Revenue2"]));
     }
   }
 

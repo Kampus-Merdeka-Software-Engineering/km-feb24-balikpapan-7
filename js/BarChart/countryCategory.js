@@ -21,8 +21,22 @@ const createCountry = async () => {
     ? filterDataByYear(data, selectedYearCountry)
     : data;
 
-  for (year in filteredData) {
-    for (country in filteredData[year]) {
+  // Filter data based on Multiselect checkbox
+  const selectedCountries = Array.from(
+    document.querySelectorAll("#countriesCheckboxes input:checked")
+  ).map((input) => input.value);
+  const filteredDataByCountries = {};
+  for (const year in filteredData) {
+    filteredDataByCountries[year] = {};
+    for (const country of selectedCountries) {
+      if (filteredData[year][country]) {
+        filteredDataByCountries[year][country] = filteredData[year][country];
+      }
+    }
+  }
+
+  for (year in filteredDataByCountries) {
+    for (country in filteredDataByCountries[year]) {
       if (country !== "Total") {
         if (!set.has(country)) {
           set.add(country);
@@ -38,18 +52,19 @@ const createCountry = async () => {
   for (let i = 0; i < slicedArray.length; i++) {
     let country = slicedArray[i];
     let totalRevenue = 0;
-    for (year in filteredData) {
+    for (year in filteredDataByCountries) {
       if (
-        filteredData[year][country] &&
-        filteredData[year][country]["Grand Total"]
+        filteredDataByCountries[year][country] &&
+        filteredDataByCountries[year][country]["Grand Total"]
       ) {
-        totalRevenue += filteredData[year][country]["Grand Total"]["Revenue"];
+        totalRevenue +=
+          filteredDataByCountries[year][country]["Grand Total"]["Revenue"];
       }
     }
     values.push(totalRevenue);
   }
 
-  // To Check if Sorting is Needed
+  // Sort if the isSort  is true
   if (isSortCountry) {
     labels.sort(
       (a, b) => values[labels.indexOf(b)] - values[labels.indexOf(a)]

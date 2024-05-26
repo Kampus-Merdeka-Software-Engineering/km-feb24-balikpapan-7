@@ -4,68 +4,415 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Team 7</title>
   </head>
   <body>
-    <div class="container">
-      <!-- Bar Chart -->
-      <div class="bar-chart-container">
-        <div class="sub-categories-chart">
-          <div class="filter">
-            <label for="sub-category-chart">Choose a Year:</label>
-            <select name="sub-category-chart" id="sub-category-chart">
-              <option value="">2011-2016</option>
-              <option value="2011">2011</option>
-              <option value="2012">2012</option>
-              <option value="2013">2013</option>
-              <option value="2014">2014</option>
-              <option value="2015">2015</option>
-              <option value="2016">2016</option>
-            </select>
-            <input
-              type="checkbox"
-              id="sort-sub-category"
-              name="sort-sub-category"
-              value="true"
-            />
-            <label for="sort-sub-category"> Sort</label><br />
+    <!-- Bar Chart -->
+    <div class="sub-categories-chart">
+      <div class="filter">
+        <label for="sub-category-chart">Choose a Year:</label>
+        <select name="sub-category-chart" id="sub-category-chart">
+          <option value="">2011-2016</option>
+          <option value="2011">2011</option>
+          <option value="2012">2011-2012</option>
+          <option value="2013">2011-2013</option>
+          <option value="2014">2011-2014</option>
+          <option value="2015">2011-2015</option>
+          <option value="2016">2011-2016</option>
+        </select>
+        <div id="filteringByCategories">
+          <div class="container-filtering-category">
+            <div class="multiselect multiSelectCategory">
+              <div class="selectBoxCategory">
+                <select>
+                  <option>Select Category</option>
+                </select>
+                <div class="overSelect"></div>
+              </div>
+              <div id="categoryCheckboxes">
+                <label for="bike-racks">
+                  <input
+                    type="checkbox"
+                    id="bike-racks"
+                    value="Bike Racks"
+                    checked
+                    name="bike-racks"
+                  />Bike Racks</label
+                >
+                <label for="bike-stands">
+                  <input
+                    type="checkbox"
+                    id="bike-stands"
+                    value="Bike Stands"
+                    name="bike-stands"
+                    checked
+                  />Bike Stands</label
+                >
+                <label for="bottles-and-cages"
+                  ><input
+                    type="checkbox"
+                    id="bottles-and-cages"
+                    value="Bottles and Cages"
+                    name="bottles-and-cages"
+                    checked
+                  />Bottles and Cages</label
+                >
+                <label for="cleaners"
+                  ><input
+                    type="checkbox"
+                    id="cleaners"
+                    value="Cleaners"
+                    name="cleaners"
+                    checked
+                  />Cleaners</label
+                >
+                <label for="fenders">
+                  <input
+                    type="checkbox"
+                    id="fenders"
+                    value="Fenders"
+                    name="fenders"
+                    checked
+                  />Fenders</label
+                >
+                <label for="helmets">
+                  <input
+                    type="checkbox"
+                    id="helmets"
+                    value="Helmets"
+                    name="helmets"
+                    checked
+                  />Helmets</label
+                >
+                <label for="hydration-packs">
+                  <input
+                    type="checkbox"
+                    id="hydration-packs"
+                    value="Hydration Packs"
+                    name="hydration-packs"
+                    checked
+                  />Hydration Packs</label
+                >
+                <label for="tires-and-tubes">
+                  <input
+                    type="checkbox"
+                    id="tires-and-tubes"
+                    value="Tires and Tubes"
+                    name="tires-and-tubes"
+                    checked
+                  />Tires and Tubes</label
+                >
+                <label for="mountain-bikes">
+                  <input
+                    type="checkbox"
+                    id="mountain-bikes"
+                    value="Mountain Bikes"
+                    name="mountain-bikes"
+                    checked
+                  />Mountain Bikes</label
+                >
+                <label for="road-bikes">
+                  <input
+                    type="checkbox"
+                    id="road-bikes"
+                    value="Road Bikes"
+                    name="road-bikes"
+                    checked
+                  />Touring Bikes</label
+                >
+                <label for="touring-bikes">
+                  <input
+                    type="checkbox"
+                    id="touring-bikes"
+                    value="Touring Bikes"
+                    name="touring-bikes"
+                    checked
+                  />Touring Bikes</label
+                >
+                <label for="caps">
+                  <input
+                    type="checkbox"
+                    id="caps"
+                    value="Caps"
+                    name="caps"
+                    checked
+                  />Caps</label
+                >
+                <label for="gloves">
+                  <input
+                    type="checkbox"
+                    id="gloves"
+                    value="Gloves"
+                    name="gloves"
+                    checked
+                  />Gloves</label
+                >
+                <label for="jerseys">
+                  <input
+                    type="checkbox"
+                    id="jerseys"
+                    value="Jerseys"
+                    name="jerseys"
+                    checked
+                  />Jerseys</label
+                >
+                <label for="shorts">
+                  <input
+                    type="checkbox"
+                    id="shorts"
+                    value="Bikes"
+                    name="shorts"
+                    checked
+                  />Shorts</label
+                >
+                <label for="socks">
+                  <input
+                    type="checkbox"
+                    id="socks"
+                    value="Socks"
+                    name="socks"
+                    checked
+                  />Socks</label
+                >
+                <label for="vests">
+                  <input
+                    type="checkbox"
+                    id="vests"
+                    value="Bikes"
+                    name="vests"
+                    checked
+                  />Vests</label
+                >
+              </div>
+            </div>
           </div>
-          <canvas id="sub-category" class="bar-chart"></canvas>
         </div>
-        <div class="country-chart">
-          <div class="filter">
-            <label for="country-chart">Choose a Year:</label>
-            <select name="country-chart" id="country-chart">
-              <option value="">2011-2016</option>
-              <option value="2011">2011</option>
-              <option value="2012">2012</option>
-              <option value="2013">2013</option>
-              <option value="2014">2014</option>
-              <option value="2015">2015</option>
-              <option value="2016">2016</option>
-            </select>
-            <input
-              type="checkbox"
-              id="sort-country"
-              name="sort-country-category"
-              value="true"
-            />
-            <label for="sort-country-label"> Sort</label><br />
-          </div>
-          <canvas id="country" class="bar-chart"></canvas>
-        </div>
+        <input
+          type="checkbox"
+          id="sort-sub-category"
+          name="sort-sub-category"
+          value="true"
+        />
+        <label for="sort-sub-category"> Sort</label><br />
       </div>
+      <canvas id="sub-category" class="bar-chart"></canvas>
     </div>
-    <!-- Pie Chart -->
 
+    <div class="country-chart">
+      <div class="filter">
+        <label for="country-chart">Choose a Year:</label>
+        <select name="country-chart" id="country-chart">
+          <option value="">2011-2016</option>
+          <option value="2011">2011</option>
+          <option value="2012">2011-2012</option>
+          <option value="2013">2011-2013</option>
+          <option value="2014">2011-2014</option>
+          <option value="2015">2011-2015</option>
+          <option value="2016">2011-2016</option>
+        </select>
+        <div id="filteringByCountries">
+          <div class="container-filtering-countries">
+            <div class="multiselect multiSelectCountries">
+              <div class="selectBoxCountries">
+                <select>
+                  <option>Select Countries</option>
+                </select>
+                <div class="overSelect"></div>
+              </div>
+              <div id="countriesCheckboxes">
+                <label for="australia">
+                  <input
+                    type="checkbox"
+                    id="australia"
+                    value="Australia"
+                    name="australia"
+                    checked
+                  />Australia</label
+                >
+                <label for="canada"
+                  ><input
+                    type="checkbox"
+                    id="canada"
+                    value="Canada"
+                    name="canada"
+                    checked
+                  />Canada</label
+                >
+                <label for="france">
+                  <input
+                    type="checkbox"
+                    id="france"
+                    value="France"
+                    name="france"
+                    checked
+                  />France</label
+                >
+                <label for="germany">
+                  <input
+                    type="checkbox"
+                    id="germany"
+                    value="Germany"
+                    name="germany"
+                    checked
+                  />Germany</label
+                >
+                <label for="united-kingdom">
+                  <input
+                    type="checkbox"
+                    id="united-kingdom"
+                    value="United Kingdom"
+                    name="united-kingdom"
+                    checked
+                  />United Kingdom</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <input
+          type="checkbox"
+          id="sort-country"
+          name="sort-country-category"
+          value="true"
+        />
+        <label for="sort-country-label"> Sort</label><br />
+      </div>
+      <canvas id="country" class="bar-chart"></canvas>
+    </div>
+
+    <!-- Pie Chart -->
     <canvas id="category-revenue"></canvas>
 
     <!-- Stacked BarChart -->
+    <div class="gender-chart">
+      <div class="filter">
+        <div id="filteringByCategories">
+          <div class="container-filtering-gender">
+            <div class="multiselect multiSelectGender">
+              <div class="selectBoxGender">
+                <select>
+                  <option>Select Gender</option>
+                </select>
+                <div class="overSelect"></div>
+              </div>
+              <div id="genderCheckboxes">
+                <label for="female">
+                  <input
+                    type="checkbox"
+                    id="female"
+                    value="Female"
+                    checked
+                    name="female"
+                  />Female</label
+                >
+                <label for="male">
+                  <input
+                    type="checkbox"
+                    id="male"
+                    value="Male"
+                    checked
+                    name="male"
+                  />Male</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <canvas id="gender-revenue"></canvas>
+    </div>
 
-    <canvas id="age-revenue"></canvas>
+    <div class="age-chart">
+      <div class="filter">
+        <div id="filteringByCategories">
+          <div class="container-filtering-age">
+            <div class="multiselect multiSelectAge">
+              <div class="selectBoxAge">
+                <select>
+                  <option>Select Age Group</option>
+                </select>
+                <div class="overSelect"></div>
+              </div>
+              <div id="ageCheckboxes">
+                <label for="Adults">
+                  <input
+                    type="checkbox"
+                    id="Adults"
+                    value="Adults (35-64)"
+                    checked
+                    name="Adults"
+                  />Adults (35-64)</label
+                >
+                <label for="Seniors">
+                  <input
+                    type="checkbox"
+                    id="Seniors"
+                    value="Seniors (64+)"
+                    checked
+                    name="Seniors"
+                  />Seniors (64+)</label
+                >
+                <label for="Seniors">
+                  <input
+                    type="checkbox"
+                    id="Young Adults"
+                    value="Young Adults (25-34)"
+                    checked
+                    name="Young Adults"
+                  />Young Adults (25-34)</label
+                >
+                <label for="Seniors">
+                  <input
+                    type="checkbox"
+                    id="Youth"
+                    value="Youth (<25)"
+                    checked
+                    name="Youth"
+                  />Youth (<25)</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <canvas id="age-revenue"></canvas>
+    </div>
 
-    <canvas id="gender-revenue"></canvas>
+    <!-- DataTable -->
+    <div class="datatable-container">
+      <table id="dataTable" class="dataTable compact">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Day</th>
+            <th>Month</th>
+            <th>Year</th>
+            <th>Age</th>
+            <th>Age Group</th>
+            <th>Gender</th>
+            <th>Country</th>
+            <th>State</th>
+            <th>Category</th>
+            <th>Sub Category</th>
+            <th>Product</th>
+            <th>Order Quantity</th>
+            <th>Cost</th>
+            <th>Price</th>
+            <th>Profit</th>
+            <th>Cost</th>
+            <th>Revenue</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
 
     <script src="./script.js"></script>
     <script src="./js/BarChart/subCategory.js"></script>

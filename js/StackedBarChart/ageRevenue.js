@@ -14,6 +14,10 @@ const createAgeStackedChart = async () => {
     datasets: [],
   };
 
+  const checkedCheckboxes = Array.from(
+    document.querySelectorAll("#ageCheckboxes input[type='checkbox']:checked")
+  ).map((checkbox) => checkbox.value);
+
   // Loop through each label and add data to datasets array
   Object.keys(data.Product_Category).forEach((category) => {
     Object.keys(data.Product_Category[category]).forEach((product) => {
@@ -31,12 +35,11 @@ const createAgeStackedChart = async () => {
       chartData.datasets.push(dataset);
     });
   });
-
-  // Sort datasets based on total revenue
+  // Sort dataset in descending order
   chartData.datasets.sort((a, b) => {
     const totalA = a.data.reduce((acc, val) => acc + val, 0);
     const totalB = b.data.reduce((acc, val) => acc + val, 0);
-    return totalB - totalA; // Sort in descending order
+    return totalB - totalA;
   });
 
   ageRevenueChart = new Chart(ctx, {
@@ -85,5 +88,3 @@ const ageFetch = async () => {
     throw new Error("Error fetching data: " + err);
   }
 };
-
-

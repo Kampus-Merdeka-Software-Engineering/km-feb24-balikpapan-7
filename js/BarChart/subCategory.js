@@ -2,8 +2,6 @@ let selectedYearSubCategory = "";
 let isSortSubCategory = false;
 let chartSubCategory;
 
-
-
 const createSubCategory = async () => {
   const data = await fetchSubCategoryJson();
   // Check if chart exists and destroy it
@@ -20,10 +18,19 @@ const createSubCategory = async () => {
     yearToUse = "2016";
   }
 
-  // To show default value
+  // Get all checked from multiSelect
+  const checkedCheckboxes = Array.from(
+    document.querySelectorAll(
+      "#categoryCheckboxes input[type='checkbox']:checked"
+    )
+  ).map((checkbox) => checkbox.value);
+
   for (const productCategory in data) {
     for (const subCategory in data[productCategory]) {
-      if (subCategory !== "Grand Total") {
+      if (
+        subCategory !== "Grand Total" &&
+        checkedCheckboxes.includes(subCategory)
+      ) {
         const subCategoryValue = data[productCategory][subCategory][yearToUse];
         if (subCategoryValue !== 0 && subCategoryValue !== undefined) {
           labels.push(subCategory);
@@ -33,11 +40,13 @@ const createSubCategory = async () => {
     }
   }
 
-  // To Check if Sorting is Needed
+  // sort data if isSort is true
   if (isSortSubCategory) {
-    labels.sort(
-      (a, b) => values[labels.indexOf(b)] - values[labels.indexOf(a)]
-    );
+    labels.sort((a, b) => {
+      const valueA = values[labels.indexOf(a)];
+      const valueB = values[labels.indexOf(b)];
+      return valueB - valueA;
+    });
     values.sort((a, b) => b - a);
   }
 
