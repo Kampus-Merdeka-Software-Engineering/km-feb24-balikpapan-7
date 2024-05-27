@@ -1,40 +1,41 @@
 let ageRevenueChart;
 
+// Function to create and update the chart
 const createAgeStackedChart = async () => {
   const data = await ageFetch();
 
   const ctx = document.getElementById("age-revenue").getContext("2d");
-  const chartData = {
-    labels: [
-      "Adults (35-64)",
-      "Seniors (64+)",
-      "Young Adults (25-34)",
-      "Youth (<25)",
-    ],
-    datasets: [],
-  };
 
+  // Get the checked checkboxes
   const checkedCheckboxes = Array.from(
     document.querySelectorAll("#ageCheckboxes input[type='checkbox']:checked")
   ).map((checkbox) => checkbox.value);
 
-  // Loop through each label and add data to datasets array
+  // Initialize the chartData by checkedCheckbox
+  const chartData = {
+    labels: checkedCheckboxes,
+    datasets: [],
+  };
+
+  // Loop through each label and add data to array
   Object.keys(data.Product_Category).forEach((category) => {
     Object.keys(data.Product_Category[category]).forEach((product) => {
       const productData = data.Product_Category[category][product];
+      const temp = [];
+
+      checkedCheckboxes.forEach((ageGroup) => {
+        temp.push(productData[ageGroup]);
+      });
+
       const dataset = {
         label: product,
-        data: [
-          productData["Adults (35-64)"],
-          productData["Seniors (64+)"],
-          productData["Young Adults (25-34)"],
-          productData["Youth (<25)"],
-        ],
+        data: temp,
         backgroundColor: getColor(product),
       };
       chartData.datasets.push(dataset);
     });
   });
+
   // Sort dataset in descending order
   chartData.datasets.sort((a, b) => {
     const totalA = a.data.reduce((acc, val) => acc + val, 0);
@@ -42,6 +43,10 @@ const createAgeStackedChart = async () => {
     return totalB - totalA;
   });
 
+  // Destroy the previous chart if it exists
+  if (ageRevenueChart) ageRevenueChart.destroy();
+
+  // Create a new chart
   ageRevenueChart = new Chart(ctx, {
     type: "bar",
     data: chartData,
@@ -88,3 +93,11 @@ const ageFetch = async () => {
     throw new Error("Error fetching data: " + err);
   }
 };
+
+// Add event listeners to each checkbox
+document
+  .querySelectorAll("#ageCheckboxes input[type='checkbox']")
+  .forEach((checkbox) => {
+    checkbox.addEventListener("change", createAgeStackedChart);
+  });
+createAgeStackedChart();
