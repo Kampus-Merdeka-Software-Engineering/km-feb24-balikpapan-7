@@ -14,284 +14,307 @@
     <title>Team 7</title>
   </head>
   <body>
+    <div class="container">
+      <div class="top-card"></div>
+      <div class="bottom-card">
+        <div class="bottom-left-card">
+          <h2>TOP SELLING PRODUCTS BY CATEGORIES</h2>
+          <div class="chart-wrapper">
+            <canvas id="sub-category" class="bar-chart"></canvas>
+          </div>
+          <div class="filter">
+            <select
+              name="sub-category-chart"
+              id="sub-category-chart"
+              style="width: 200px"
+            >
+              <option value="">Select Range of Year</option>
+              <option value="2011">2011</option>
+              <option value="2012">2011-2012</option>
+              <option value="2013">2011-2013</option>
+              <option value="2014">2011-2014</option>
+              <option value="2015">2011-2015</option>
+              <option value="2016">2011-2016</option>
+            </select>
+            <div id="filteringByCategories">
+              <div class="container-filtering-category">
+                <div class="multiselect multiSelectCategory">
+                  <div class="selectBoxCategory">
+                    <select style="width: 200px">
+                      <option>Select Category</option>
+                    </select>
+                    <div class="overSelect"></div>
+                  </div>
+                  <div id="categoryCheckboxes">
+                    <label for="bike-racks">
+                      <input
+                        type="checkbox"
+                        id="bike-racks"
+                        value="Bike Racks"
+                        checked
+                        name="bike-racks"
+                      />Bike Racks</label
+                    >
+                    <label for="bike-stands">
+                      <input
+                        type="checkbox"
+                        id="bike-stands"
+                        value="Bike Stands"
+                        name="bike-stands"
+                        checked
+                      />Bike Stands</label
+                    >
+                    <label for="bottles-and-cages"
+                      ><input
+                        type="checkbox"
+                        id="bottles-and-cages"
+                        value="Bottles and Cages"
+                        name="bottles-and-cages"
+                        checked
+                      />Bottles and Cages</label
+                    >
+                    <label for="cleaners"
+                      ><input
+                        type="checkbox"
+                        id="cleaners"
+                        value="Cleaners"
+                        name="cleaners"
+                        checked
+                      />Cleaners</label
+                    >
+                    <label for="fenders">
+                      <input
+                        type="checkbox"
+                        id="fenders"
+                        value="Fenders"
+                        name="fenders"
+                        checked
+                      />Fenders</label
+                    >
+                    <label for="helmets">
+                      <input
+                        type="checkbox"
+                        id="helmets"
+                        value="Helmets"
+                        name="helmets"
+                        checked
+                      />Helmets</label
+                    >
+                    <label for="hydration-packs">
+                      <input
+                        type="checkbox"
+                        id="hydration-packs"
+                        value="Hydration Packs"
+                        name="hydration-packs"
+                        checked
+                      />Hydration Packs</label
+                    >
+                    <label for="tires-and-tubes">
+                      <input
+                        type="checkbox"
+                        id="tires-and-tubes"
+                        value="Tires and Tubes"
+                        name="tires-and-tubes"
+                        checked
+                      />Tires and Tubes</label
+                    >
+                    <label for="mountain-bikes">
+                      <input
+                        type="checkbox"
+                        id="mountain-bikes"
+                        value="Mountain Bikes"
+                        name="mountain-bikes"
+                        checked
+                      />Mountain Bikes</label
+                    >
+                    <label for="road-bikes">
+                      <input
+                        type="checkbox"
+                        id="road-bikes"
+                        value="Road Bikes"
+                        name="road-bikes"
+                        checked
+                      />Touring Bikes</label
+                    >
+                    <label for="touring-bikes">
+                      <input
+                        type="checkbox"
+                        id="touring-bikes"
+                        value="Touring Bikes"
+                        name="touring-bikes"
+                        checked
+                      />Touring Bikes</label
+                    >
+                    <label for="caps">
+                      <input
+                        type="checkbox"
+                        id="caps"
+                        value="Caps"
+                        name="caps"
+                        checked
+                      />Caps</label
+                    >
+                    <label for="gloves">
+                      <input
+                        type="checkbox"
+                        id="gloves"
+                        value="Gloves"
+                        name="gloves"
+                        checked
+                      />Gloves</label
+                    >
+                    <label for="jerseys">
+                      <input
+                        type="checkbox"
+                        id="jerseys"
+                        value="Jerseys"
+                        name="jerseys"
+                        checked
+                      />Jerseys</label
+                    >
+                    <label for="shorts">
+                      <input
+                        type="checkbox"
+                        id="shorts"
+                        value="Bikes"
+                        name="shorts"
+                        checked
+                      />Shorts</label
+                    >
+                    <label for="socks">
+                      <input
+                        type="checkbox"
+                        id="socks"
+                        value="Socks"
+                        name="socks"
+                        checked
+                      />Socks</label
+                    >
+                    <label for="vests">
+                      <input
+                        type="checkbox"
+                        id="vests"
+                        value="Bikes"
+                        name="vests"
+                        checked
+                      />Vests</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sort">
+              <input
+                type="checkbox"
+                id="sort-sub-category"
+                name="sort-sub-category"
+              />
+              <label for="sort-sub-category"> Sort</label><br />
+            </div>
+          </div>
+        </div>
+        <div class="bottom-right-card">
+          <h2>TOP SELLING PRODUCTS BY COUNTRIES</h2>
+          <div class="chart-wrapper">
+            <canvas id="country" class="bar-chart"></canvas>
+          </div>
+          <div class="filter">
+            <select
+              name="country-chart"
+              id="country-chart"
+              style="width: 200px"
+            >
+              <option value="">Select Range of Year</option>
+              <option value="2011">2011</option>
+              <option value="2012">2011-2012</option>
+              <option value="2013">2011-2013</option>
+              <option value="2014">2011-2014</option>
+              <option value="2015">2011-2015</option>
+              <option value="2016">2011-2016</option>
+            </select>
+            <div id="filteringByCountries">
+              <div class="container-filtering-countries">
+                <div class="multiselect multiSelectCountries">
+                  <div class="selectBoxCountries">
+                    <select style="width: 200px">
+                      <option>Select Countries</option>
+                    </select>
+                    <div class="overSelect"></div>
+                  </div>
+                  <div id="countriesCheckboxes">
+                    <label for="australia">
+                      <input
+                        type="checkbox"
+                        id="australia"
+                        value="Australia"
+                        name="australia"
+                        checked
+                      />Australia</label
+                    >
+                    <label for="canada"
+                      ><input
+                        type="checkbox"
+                        id="canada"
+                        value="Canada"
+                        name="canada"
+                        checked
+                      />Canada</label
+                    >
+                    <label for="france">
+                      <input
+                        type="checkbox"
+                        id="france"
+                        value="France"
+                        name="france"
+                        checked
+                      />France</label
+                    >
+                    <label for="germany">
+                      <input
+                        type="checkbox"
+                        id="germany"
+                        value="Germany"
+                        name="germany"
+                        checked
+                      />Germany</label
+                    >
+                    <label for="united-kingdom">
+                      <input
+                        type="checkbox"
+                        id="united-kingdom"
+                        value="United Kingdom"
+                        name="united-kingdom"
+                        checked
+                      />United Kingdom</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sort">
+              <input
+                type="checkbox"
+                id="sort-country"
+                name="sort-country-category"
+                value="true"
+              />
+              <label for="sort-country-label"> Sort</label><br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Bar Chart -->
-    <div class="sub-categories-chart">
-      <div class="filter">
-        <label for="sub-category-chart">Choose a Year:</label>
-        <select name="sub-category-chart" id="sub-category-chart">
-          <option value="">2011-2016</option>
-          <option value="2011">2011</option>
-          <option value="2012">2011-2012</option>
-          <option value="2013">2011-2013</option>
-          <option value="2014">2011-2014</option>
-          <option value="2015">2011-2015</option>
-          <option value="2016">2011-2016</option>
-        </select>
-        <div id="filteringByCategories">
-          <div class="container-filtering-category">
-            <div class="multiselect multiSelectCategory">
-              <div class="selectBoxCategory">
-                <select>
-                  <option>Select Category</option>
-                </select>
-                <div class="overSelect"></div>
-              </div>
-              <div id="categoryCheckboxes">
-                <label for="bike-racks">
-                  <input
-                    type="checkbox"
-                    id="bike-racks"
-                    value="Bike Racks"
-                    checked
-                    name="bike-racks"
-                  />Bike Racks</label
-                >
-                <label for="bike-stands">
-                  <input
-                    type="checkbox"
-                    id="bike-stands"
-                    value="Bike Stands"
-                    name="bike-stands"
-                    checked
-                  />Bike Stands</label
-                >
-                <label for="bottles-and-cages"
-                  ><input
-                    type="checkbox"
-                    id="bottles-and-cages"
-                    value="Bottles and Cages"
-                    name="bottles-and-cages"
-                    checked
-                  />Bottles and Cages</label
-                >
-                <label for="cleaners"
-                  ><input
-                    type="checkbox"
-                    id="cleaners"
-                    value="Cleaners"
-                    name="cleaners"
-                    checked
-                  />Cleaners</label
-                >
-                <label for="fenders">
-                  <input
-                    type="checkbox"
-                    id="fenders"
-                    value="Fenders"
-                    name="fenders"
-                    checked
-                  />Fenders</label
-                >
-                <label for="helmets">
-                  <input
-                    type="checkbox"
-                    id="helmets"
-                    value="Helmets"
-                    name="helmets"
-                    checked
-                  />Helmets</label
-                >
-                <label for="hydration-packs">
-                  <input
-                    type="checkbox"
-                    id="hydration-packs"
-                    value="Hydration Packs"
-                    name="hydration-packs"
-                    checked
-                  />Hydration Packs</label
-                >
-                <label for="tires-and-tubes">
-                  <input
-                    type="checkbox"
-                    id="tires-and-tubes"
-                    value="Tires and Tubes"
-                    name="tires-and-tubes"
-                    checked
-                  />Tires and Tubes</label
-                >
-                <label for="mountain-bikes">
-                  <input
-                    type="checkbox"
-                    id="mountain-bikes"
-                    value="Mountain Bikes"
-                    name="mountain-bikes"
-                    checked
-                  />Mountain Bikes</label
-                >
-                <label for="road-bikes">
-                  <input
-                    type="checkbox"
-                    id="road-bikes"
-                    value="Road Bikes"
-                    name="road-bikes"
-                    checked
-                  />Touring Bikes</label
-                >
-                <label for="touring-bikes">
-                  <input
-                    type="checkbox"
-                    id="touring-bikes"
-                    value="Touring Bikes"
-                    name="touring-bikes"
-                    checked
-                  />Touring Bikes</label
-                >
-                <label for="caps">
-                  <input
-                    type="checkbox"
-                    id="caps"
-                    value="Caps"
-                    name="caps"
-                    checked
-                  />Caps</label
-                >
-                <label for="gloves">
-                  <input
-                    type="checkbox"
-                    id="gloves"
-                    value="Gloves"
-                    name="gloves"
-                    checked
-                  />Gloves</label
-                >
-                <label for="jerseys">
-                  <input
-                    type="checkbox"
-                    id="jerseys"
-                    value="Jerseys"
-                    name="jerseys"
-                    checked
-                  />Jerseys</label
-                >
-                <label for="shorts">
-                  <input
-                    type="checkbox"
-                    id="shorts"
-                    value="Bikes"
-                    name="shorts"
-                    checked
-                  />Shorts</label
-                >
-                <label for="socks">
-                  <input
-                    type="checkbox"
-                    id="socks"
-                    value="Socks"
-                    name="socks"
-                    checked
-                  />Socks</label
-                >
-                <label for="vests">
-                  <input
-                    type="checkbox"
-                    id="vests"
-                    value="Bikes"
-                    name="vests"
-                    checked
-                  />Vests</label
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <input
-          type="checkbox"
-          id="sort-sub-category"
-          name="sort-sub-category"
-          value="true"
-        />
-        <label for="sort-sub-category"> Sort</label><br />
-      </div>
-      <canvas id="sub-category" class="bar-chart"></canvas>
-    </div>
 
-    <div class="country-chart">
-      <div class="filter">
-        <label for="country-chart">Choose a Year:</label>
-        <select name="country-chart" id="country-chart">
-          <option value="">2011-2016</option>
-          <option value="2011">2011</option>
-          <option value="2012">2011-2012</option>
-          <option value="2013">2011-2013</option>
-          <option value="2014">2011-2014</option>
-          <option value="2015">2011-2015</option>
-          <option value="2016">2011-2016</option>
-        </select>
-        <div id="filteringByCountries">
-          <div class="container-filtering-countries">
-            <div class="multiselect multiSelectCountries">
-              <div class="selectBoxCountries">
-                <select>
-                  <option>Select Countries</option>
-                </select>
-                <div class="overSelect"></div>
-              </div>
-              <div id="countriesCheckboxes">
-                <label for="australia">
-                  <input
-                    type="checkbox"
-                    id="australia"
-                    value="Australia"
-                    name="australia"
-                    checked
-                  />Australia</label
-                >
-                <label for="canada"
-                  ><input
-                    type="checkbox"
-                    id="canada"
-                    value="Canada"
-                    name="canada"
-                    checked
-                  />Canada</label
-                >
-                <label for="france">
-                  <input
-                    type="checkbox"
-                    id="france"
-                    value="France"
-                    name="france"
-                    checked
-                  />France</label
-                >
-                <label for="germany">
-                  <input
-                    type="checkbox"
-                    id="germany"
-                    value="Germany"
-                    name="germany"
-                    checked
-                  />Germany</label
-                >
-                <label for="united-kingdom">
-                  <input
-                    type="checkbox"
-                    id="united-kingdom"
-                    value="United Kingdom"
-                    name="united-kingdom"
-                    checked
-                  />United Kingdom</label
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <input
-          type="checkbox"
-          id="sort-country"
-          name="sort-country-category"
-          value="true"
-        />
-        <label for="sort-country-label"> Sort</label><br />
-      </div>
-      <canvas id="country" class="bar-chart"></canvas>
-    </div>
+    <div class="sub-categories-chart"></div>
+
+    <div class="country-chart"></div>
 
     <!-- Pie Chart -->
-    <canvas id="category-revenue"></canvas>
+    <!-- <canvas id="category-revenue"></canvas> -->
 
     <!-- Stacked BarChart -->
-    <div class="gender-chart">
+    <!-- <div class="gender-chart">
       <div class="filter">
         <div id="filteringByCategories">
           <div class="container-filtering-gender">
@@ -327,9 +350,9 @@
         </div>
       </div>
       <canvas id="gender-revenue"></canvas>
-    </div>
+    </div> -->
 
-    <div class="age-chart">
+    <!-- <div class="age-chart">
       <div class="filter">
         <div id="filteringByCategories">
           <div class="container-filtering-age">
@@ -383,10 +406,10 @@
         </div>
       </div>
       <canvas id="age-revenue"></canvas>
-    </div>
+    </div> -->
 
     <!-- DataTable -->
-    <div class="datatable-container">
+    <!-- <div class="datatable-container">
       <table id="dataTable" class="dataTable compact">
         <thead>
           <tr>
@@ -412,7 +435,7 @@
         </thead>
         <tbody></tbody>
       </table>
-    </div>
+    </div> -->
 
     <script src="./script.js"></script>
     <script src="./js/BarChart/subCategory.js"></script>
