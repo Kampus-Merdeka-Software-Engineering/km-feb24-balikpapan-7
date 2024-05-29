@@ -31,7 +31,9 @@ const createCategoryPieChart = async () => {
     options: {
       plugins: {
         legend: {
+          position: "right",
           labels: {
+            padding: 10,
             color: "black",
           },
         },

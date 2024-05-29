@@ -14,11 +14,14 @@
     <title>Team 7</title>
   </head>
   <body>
-    <div class="container">
+    <div class="upper-container">
       <div class="top-card"></div>
+      <!-- Bar Chart -->
       <div class="bottom-card">
         <div class="bottom-left-card">
-          <h2>TOP SELLING PRODUCTS BY CATEGORIES</h2>
+          <div class="card-header">
+            <h2>TOP SELLING PRODUCTS BY CATEGORIES</h2>
+          </div>
           <div class="chart-wrapper">
             <canvas id="sub-category" class="bar-chart"></canvas>
           </div>
@@ -214,7 +217,9 @@
           </div>
         </div>
         <div class="bottom-right-card">
-          <h2>TOP SELLING PRODUCTS BY COUNTRIES</h2>
+          <div class="card-header">
+            <h2>TOP SELLING PRODUCTS BY COUNTRIES</h2>
+          </div>
           <div class="chart-wrapper">
             <canvas id="country" class="bar-chart"></canvas>
           </div>
@@ -304,53 +309,62 @@
         </div>
       </div>
     </div>
-    <!-- Bar Chart -->
+    <div class="mid-container">
+      <div class="pie-header">
+        <h2>TOP SELLING PRODUCT BY CATEGORIES (REVENUE)</h2>
+      </div>
+      <!-- Pie Chart -->
+      <div class="pie-chart">
+        <canvas id="category-revenue"></canvas>
+      </div>
+    </div>
+    <div class="bottom-container">
+      <!-- Stacked BarChart -->
+      <div class="gender-container">
+        <div class="gender-header">
+          <h2>TOP SELLING PRODUCT BY GENDER (REVENUE)</h2>
+        </div>
+        <div class="gender-chart">
+          <canvas id="gender-revenue"></canvas>
+        </div>
+      </div>
+      <div class="age-container"></div>
+    </div>
 
-    <div class="sub-categories-chart"></div>
-
-    <div class="country-chart"></div>
-
-    <!-- Pie Chart -->
-    <!-- <canvas id="category-revenue"></canvas> -->
-
-    <!-- Stacked BarChart -->
-    <!-- <div class="gender-chart">
-      <div class="filter">
-        <div id="filteringByCategories">
-          <div class="container-filtering-gender">
-            <div class="multiselect multiSelectGender">
-              <div class="selectBoxGender">
-                <select>
-                  <option>Select Gender</option>
-                </select>
-                <div class="overSelect"></div>
-              </div>
-              <div id="genderCheckboxes">
-                <label for="female">
-                  <input
-                    type="checkbox"
-                    id="female"
-                    value="Female"
-                    checked
-                    name="female"
-                  />Female</label
-                >
-                <label for="male">
-                  <input
-                    type="checkbox"
-                    id="male"
-                    value="Male"
-                    checked
-                    name="male"
-                  />Male</label
-                >
-              </div>
+    <div class="filter">
+      <div id="filteringByCategories">
+        <div class="container-filtering-gender">
+          <div class="multiselect multiSelectGender">
+            <div class="selectBoxGender">
+              <select>
+                <option>Select Gender</option>
+              </select>
+              <div class="overSelect"></div>
+            </div>
+            <div id="genderCheckboxes">
+              <label for="female">
+                <input
+                  type="checkbox"
+                  id="female"
+                  value="Female"
+                  checked
+                  name="female"
+                />Female</label
+              >
+              <label for="male">
+                <input
+                  type="checkbox"
+                  id="male"
+                  value="Male"
+                  checked
+                  name="male"
+                />Male</label
+              >
             </div>
           </div>
         </div>
       </div>
-      <canvas id="gender-revenue"></canvas>
-    </div> -->
+    </div>
 
     <!-- <div class="age-chart">
       <div class="filter">

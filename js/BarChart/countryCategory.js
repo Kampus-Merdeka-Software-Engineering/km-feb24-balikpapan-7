@@ -79,6 +79,7 @@ const createCountry = async () => {
       datasets: [
         {
           label: "Top Selling Product By Countries",
+          backgroundColor: "rgb(41, 183, 228)",
           data: values,
           borderWidth: 1,
         },
@@ -86,9 +87,26 @@ const createCountry = async () => {
     },
     options: {
       indexAxis: "y",
+      responsive: true,
+      maintainAspectRatio: false,
       scales: {
         x: {
           beginAtZero: true,
+          ticks: {
+            color: "rgb(30, 27, 31)",
+          },
+        },
+        y: {
+          ticks: {
+            color: "rgb(30, 27, 31)",
+          },
+        },
+      },
+      plugins: {
+        legend: {
+          labels: {
+            color: "rgb(30, 27, 31)",
+          },
         },
       },
     },

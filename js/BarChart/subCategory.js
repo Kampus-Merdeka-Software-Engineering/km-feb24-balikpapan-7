@@ -58,15 +58,33 @@ const createSubCategory = async () => {
         {
           label: "Top Selling Product By Categories",
           data: values,
+          backgroundColor: "rgb(41, 183, 228)",
           borderWidth: 1,
         },
       ],
     },
     options: {
       indexAxis: "y",
+      responsive: true,
+      maintainAspectRatio: false,
       scales: {
         x: {
           beginAtZero: true,
+          ticks: {
+            color: "rgb(30, 27, 31)",
+          },
+        },
+        y: {
+          ticks: {
+            color: "rgb(30, 27, 31)",
+          },
+        },
+      },
+      plugins: {
+        legend: {
+          labels: {
+            color: "rgb(30, 27, 31)",
+          },
         },
       },
     },
