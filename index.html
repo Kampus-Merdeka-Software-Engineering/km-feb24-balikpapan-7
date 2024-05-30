@@ -318,7 +318,42 @@
         <canvas id="category-revenue"></canvas>
       </div>
     </div>
+
     <div class="bottom-container">
+      <div class="filter">
+        <div id="filteringByCategories">
+          <div class="container-filtering-gender">
+            <div class="multiselect multiSelectGender">
+              <div class="selectBoxGender">
+                <select>
+                  <option>Select Gender</option>
+                </select>
+                <div class="overSelect"></div>
+              </div>
+              <div id="genderCheckboxes">
+                <label for="female">
+                  <input
+                    type="checkbox"
+                    id="female"
+                    value="Female"
+                    checked
+                    name="female"
+                  />Female</label
+                >
+                <label for="male">
+                  <input
+                    type="checkbox"
+                    id="male"
+                    value="Male"
+                    checked
+                    name="male"
+                  />Male</label
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- Stacked BarChart -->
       <div class="gender-container">
         <div class="gender-header">
@@ -328,45 +363,6 @@
           <canvas id="gender-revenue"></canvas>
         </div>
       </div>
-      <div class="age-container"></div>
-    </div>
-
-    <div class="filter">
-      <div id="filteringByCategories">
-        <div class="container-filtering-gender">
-          <div class="multiselect multiSelectGender">
-            <div class="selectBoxGender">
-              <select>
-                <option>Select Gender</option>
-              </select>
-              <div class="overSelect"></div>
-            </div>
-            <div id="genderCheckboxes">
-              <label for="female">
-                <input
-                  type="checkbox"
-                  id="female"
-                  value="Female"
-                  checked
-                  name="female"
-                />Female</label
-              >
-              <label for="male">
-                <input
-                  type="checkbox"
-                  id="male"
-                  value="Male"
-                  checked
-                  name="male"
-                />Male</label
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- <div class="age-chart">
       <div class="filter">
         <div id="filteringByCategories">
           <div class="container-filtering-age">
@@ -419,11 +415,18 @@
           </div>
         </div>
       </div>
-      <canvas id="age-revenue"></canvas>
-    </div> -->
+      <div class="age-container">
+        <div class="age-header">
+          <h2>TOP SELLING PRODUCTS BY GROUP AGE (REVENUE)</h2>
+        </div>
+        <div class="age-chart">
+          <canvas id="age-revenue" />
+        </div>
+      </div>
+    </div>
 
     <!-- DataTable -->
-    <!-- <div class="datatable-container">
+    <div class="datatable-container">
       <table id="dataTable" class="dataTable compact">
         <thead>
           <tr>
@@ -449,7 +452,7 @@
         </thead>
         <tbody></tbody>
       </table>
-    </div> -->
+    </div>
 
     <script src="./script.js"></script>
     <script src="./js/BarChart/subCategory.js"></script>

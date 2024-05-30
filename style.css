@@ -154,7 +154,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: tomato;
 }
 
 .gender-container {
@@ -166,7 +165,8 @@ body {
   flex-direction: column;
 }
 
-.gender-header {
+.gender-header,
+.age-header {
   width: 100%;
   height: 10vh;
   background-color: black;
@@ -176,7 +176,8 @@ body {
   color: white;
 }
 
-.gender-chart {
+.gender-chart,
+.age-chart {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,7 +195,8 @@ body {
 .age-container {
   width: 90%;
   height: 70vh;
-  /* background-color: purple; */
+  margin-top: 20px;
+  background-color: purple;
 }
 
 /* datatable */
