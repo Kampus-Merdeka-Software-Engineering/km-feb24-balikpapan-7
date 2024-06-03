@@ -1,0 +1,143 @@
+{
+    "Product_Category": {
+      "Accessories": {
+        "Sub_Category": {
+          "Bike Racks": {
+            "Sum of Order_Quantity": 4741,
+            "Sum of Order_Quantity2": "0.35%",
+            "Sum of Revenue": 517800,
+            "Sum of Revenue2": "0.61%"  
+          },
+          "Bike Stands": {
+            "Sum of Order_Quantity": 2412,
+            "Sum of Order_Quantity2": "0.18%",
+            "Sum of Revenue": 344075,
+            "Sum of Revenue2": "0.40%"
+          },
+          "Bottles and Cages": {
+            "Sum of Order_Quantity": 241726,
+            "Sum of Order_Quantity2": "17.97%",
+            "Sum of Revenue": 1409174,
+            "Sum of Revenue2": "1.65%"
+          },
+          "Cleaners": {
+            "Sum of Order_Quantity": 27574,
+            "Sum of Order_Quantity2": "2.05%",
+            "Sum of Revenue": 198821,
+            "Sum of Revenue2": "0.23%"
+          },
+          "Fenders": {
+            "Sum of Order_Quantity": 62138,
+            "Sum of Order_Quantity2": "4.62%",
+            "Sum of Revenue": 1245733,
+            "Sum of Revenue2": "1.46%"
+          },
+          "Helmets": {
+            "Sum of Order_Quantity": 181606,
+            "Sum of Order_Quantity2": "13.50%",
+            "Sum of Revenue": 5741081,
+            "Sum of Revenue2": "6.73%"
+          },
+          "Hydration Packs": {
+            "Sum of Order_Quantity": 19914,
+            "Sum of Order_Quantity2": "1.48%",
+            "Sum of Revenue": 990406,
+            "Sum of Revenue2": "1.16%"
+          },
+          "Tires and Tubes": {
+            "Sum of Order_Quantity": 514051,
+            "Sum of Order_Quantity2": "38.21%",
+            "Sum of Revenue": 4670902,
+            "Sum of Revenue2": "5.48%"
+          }
+        },
+        "Total": {
+          "Sum of Order_Quantity": 1054162,
+          "Sum of Order_Quantity2": "78.36%",
+          "Sum of Revenue": 15117992,
+          "Sum of Revenue2": "17.73%"
+        }
+      },
+      "Bikes": {
+        "Sub_Category": {
+          "Mountain Bikes": {
+            "Sum of Order_Quantity": 11992,
+            "Sum of Order_Quantity2": "0.89%",
+            "Sum of Revenue": 21123526,
+            "Sum of Revenue2": "24.77%"
+          },
+          "Road Bikes": {
+            "Sum of Order_Quantity": 19771,
+            "Sum of Order_Quantity2": "1.47%",
+            "Sum of Revenue": 33363061,
+            "Sum of Revenue2": "39.13%"
+          },
+          "Touring Bikes": {
+            "Sum of Order_Quantity": 4648,
+            "Sum of Order_Quantity2": "0.35%",
+            "Sum of Revenue": 7295547,
+            "Sum of Revenue2": "8.56%"
+          }
+        },
+        "Total": {
+          "Sum of Order_Quantity": 36411,
+          "Sum of Order_Quantity2": "2.71%",
+          "Sum of Revenue": 61782134,
+          "Sum of Revenue2": "72.45%"
+        }
+      },
+      "Clothing": {
+        "Sub_Category": {
+          "Caps": {
+            "Sum of Order_Quantity": 67268,
+            "Sum of Order_Quantity2": "5.00%",
+            "Sum of Revenue": 548777,
+            "Sum of Revenue2": "0.64%"
+          },
+          "Gloves": {
+            "Sum of Order_Quantity": 39978,
+            "Sum of Order_Quantity2": "2.97%",
+            "Sum of Revenue": 871419,
+            "Sum of Revenue2": "1.02%"
+          },
+          "Jerseys": {
+            "Sum of Order_Quantity": 88125,
+            "Sum of Order_Quantity2": "6.55%",
+            "Sum of Revenue": 4113742,
+            "Sum of Revenue2": "4.82%"
+          },
+          "Shorts": {
+            "Sum of Order_Quantity": 27168,
+            "Sum of Order_Quantity2": "2.02%",
+            "Sum of Revenue": 1740710,
+            "Sum of Revenue2": "2.04%"
+          },
+          "Socks": {
+            "Sum of Order_Quantity": 17678,
+            "Sum of Order_Quantity2": "1.31%",
+            "Sum of Revenue": 147171,
+            "Sum of Revenue2": "0.17%"
+          },
+          "Vests": {
+            "Sum of Order_Quantity": 14526,
+            "Sum of Order_Quantity2": "1.08%",
+            "Sum of Revenue": 949063,
+            "Sum of Revenue2": "1.11%"
+          }
+        },
+        "Total": {
+          "Sum of Order_Quantity": 254743,
+          "Sum of Order_Quantity2": "18.94%",
+          "Sum of Revenue": 8370882,
+          "Sum of Revenue2": "9.82%"
+        }
+      }
+    },
+    "Grand Total": {
+      "Sum of Order_Quantity": 1345316,
+      "Sum of Order_Quantity2": "100.00%",
+      "Sum of Revenue": 85271008,
+      "Sum of Revenue2": "100.00%"
+    }
+  }
+  

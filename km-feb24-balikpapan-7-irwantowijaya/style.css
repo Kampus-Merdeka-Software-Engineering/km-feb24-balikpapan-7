@@ -1,0 +1,439 @@
+/* Adding CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: white;
+}
+
+h1 {
+  margin-left: 45px;
+  margin-top: 5vh;
+  font-weight: bolder;
+}
+
+h2 {
+  margin-left: 45px;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+.box-parent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: #F2F0FC;
+  border: 2px solid #21292E;
+  border-radius: 15px;
+  width: 100%;
+  height: 148px;
+  margin-left: 45px;
+  margin-right: 45px;
+  text-align: center;
+}
+
+.box h2{
+  color: black;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+.icons{
+  margin-top: 10px;
+}
+
+.number{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.upper-container {
+  min-height: 80vh;
+}
+
+.top-card {
+  width: 100%;
+  height: 15vh;
+}
+
+/* bar-chart */
+.bottom-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 65vh;
+  margin-bottom: 10vh;
+}
+
+.bottom-left-card,
+.bottom-right-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 65vh;
+}
+
+.card-header {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.bottom-left-card h2,
+.bottom-right-card h2 {
+  margin: 20px 0 10px 0;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+.chart-wrapper {
+  width: 90%;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid #353535;
+  background-color:#D1D9E4;
+}
+
+#sub-category,
+#country {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.filter {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter .sort {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter label {
+  margin-right: 10px;
+}
+
+.filter select,
+.filter input[type="checkbox"] {
+  margin-right: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.filter select {
+  width: 120px;
+}
+
+.filter input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.filter input[type="checkbox"]:checked {
+  background-color: darkturquoise;
+}
+
+.mid-container {
+  min-height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pie-header {
+  width: 90%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.pie-header h2,.gender-header h2,
+.age-header h2{
+  text-align: center;
+  margin: 20px 0 10px 0;
+}
+
+.pie-chart {
+  width: 90%;
+  height: 65vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: solid #353535;
+  background-color:#D1D9E4;
+}
+
+#category-revenue {
+  width: 50% !important;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.bottom-container {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gender-container {
+  width: 90%;
+  height: 65vh;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10vh;
+}
+
+.gender-header,
+.age-header {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+
+.gender-chart,
+.age-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  border: solid #353535;
+  background-color: #89ACC9;
+}
+
+#gender-revenue {
+  width: 50% !important;
+  margin-bottom: 40px;
+}
+
+.age-container {
+  width: 90%;
+  height: 65vh;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10vh;
+}
+
+/* datatable */
+.datatable-container {
+  max-width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 5vh;
+}
+
+.dataTable {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+#dataTable {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.dataTable th,
+.dataTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.dataTable th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.dataTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.dataTable tr:hover {
+  background-color: #ddd;
+}
+
+/* filtering dropdown checkbox */
+.multiselect {
+  width: 100%;
+  position: relative;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.selectBoxCategory select,
+.selectBoxCountries select,
+.selectBoxGender select,
+.selectBoxAge select {
+  width: 100%;
+  padding: 10px;
+}
+
+.overSelect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#categoryCheckboxes,
+#countriesCheckboxes,
+#genderCheckboxes,
+#ageCheckboxes {
+  display: none;
+  position: absolute;
+  border: 1px gray solid;
+  border-radius: 4px;
+  width: 120%;
+  background-color: white;
+  z-index: 10;
+  top: 90%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+#categoryCheckboxes label,
+#countriesCheckboxes label,
+#genderCheckboxes label,
+#ageCheckboxes label {
+  font-weight: 400;
+  font-size: 15px;
+  display: block;
+  color: black;
+  padding: 4px;
+}
+
+.multiSelectCategory,
+.multiSelectCountries,
+.multiSelectGender,
+.multiSelectAge {
+  width: 100%;
+}
+
+.selectBoxCategory:hover,
+.selectBoxCountries:hover,
+.selectBoxGender:hover,
+.selectBoxAge:hover {
+  cursor: pointer;
+}
+
+.displayerDropdownCheckbox {
+  display: block !important;
+  border: 1px solid black;
+}
+
+.container-filtering-category {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .box-parent {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+  .box {
+    margin: 10px auto;
+    width: calc(50% - 20px);
+  }
+
+  h1,h2 {
+    margin-left: 50px;
+    font-size: 1.5em;
+  }
+
+  .top-card{
+    height: 80vh;
+  }
+
+  .bottom-card {
+    flex-direction: column;
+  }
+  
+  .bottom-left-card,.bottom-right-card{
+    margin-bottom: 30vh;
+  }
+
+  .mid-container{
+    margin-top: 50vh;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .box h2{
+    font-size: 100%;
+  }
+
+  .icons{
+    width: 30%;
+  }
+
+  .number{
+    width: 50%;
+  }
+
+  #category-revenue {
+    width: 90% !important;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  #gender-revenue {
+    width: 90% !important;
+    margin-bottom: 40px;
+  }
+}
