@@ -76,10 +76,10 @@ const createGenderChart = async () => {
         plugins: {
           legend: {
             position: "top",
+            color: "rgb(30, 27, 31)",
           },
           title: {
             display: true,
-            text: "Top Selling Products by Gender (Revenue)",
           },
         },
         scales: {
@@ -88,11 +88,14 @@ const createGenderChart = async () => {
             grid: {
               borderDash: [5, 5],
             },
+            ticks: {
+              color: "rgb(30, 27, 31)",
+            },
           },
           y: {
             stacked: true,
             ticks: {
-              color: "black",
+              color: "rgb(30, 27, 31)",
             },
             grid: {
               borderDash: [5, 5],

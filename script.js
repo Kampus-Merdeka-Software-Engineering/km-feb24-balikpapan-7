@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const selectBoxAge = document.querySelector(".selectBoxAge");
   let ageCheckboxes = document.getElementById("ageCheckboxes");
   selectBoxAge.addEventListener("click", () => {
-    ageCheckboxes .classList.toggle("displayerDropdownCheckbox");
+    ageCheckboxes.classList.toggle("displayerDropdownCheckbox");
   });
 
   // Gender Stacked Bar Chart
@@ -81,6 +81,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     $("#dataTable").DataTable({
+      scrollX: true,
       data: data,
       searching: true,
       columns: [
