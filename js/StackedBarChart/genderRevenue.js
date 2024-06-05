@@ -73,13 +73,33 @@ const createGenderChart = async () => {
       options: {
         indexAxis: "y",
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
           legend: {
-            position: "top",
-            color: "rgb(30, 27, 31)",
+            position: "bottom",
+            align: "start",
+            labels: {
+              font: {
+                size: 12,
+              },
+              boxWidth: 10,
+            },
           },
           title: {
             display: true,
+            font: {
+              size: 16,
+            },
+          },
+          tooltip: {
+            enabled: true,
+            callbacks: {
+              label: function (context) {
+                const label = context.dataset.label || "";
+                const value = context.raw;
+                return `${label}: ${value.toLocaleString()}`;
+              },
+            },
           },
         },
         scales: {
@@ -90,6 +110,9 @@ const createGenderChart = async () => {
             },
             ticks: {
               color: "rgb(30, 27, 31)",
+              callback: function (value) {
+                return value.toLocaleString();
+              },
             },
           },
           y: {
@@ -100,6 +123,14 @@ const createGenderChart = async () => {
             grid: {
               borderDash: [5, 5],
             },
+          },
+        },
+        layout: {
+          padding: {
+            left: 10,
+            right: 10,
+            top: 10,
+            bottom: 10,
           },
         },
       },

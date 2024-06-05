@@ -53,13 +53,21 @@ const createAgeStackedChart = async () => {
     options: {
       indexAxis: "y",
       responsive: true,
+      maintainAspectRatio: false,
       plugins: {
         legend: {
-          position: "top",
+          position: "bottom",
+          labels: {
+            font: {
+              size: 10,
+            },
+            padding: 10,
+          },
         },
-        title: {
-          display: true,
-          text: "Top Selling Products by Age Group (Revenue)",
+        tooltip: {
+          bodyFont: {
+            size: 12,
+          },
         },
       },
       scales: {
@@ -68,15 +76,31 @@ const createAgeStackedChart = async () => {
           grid: {
             borderDash: [5, 5],
           },
+          ticks: {
+            font: {
+              size: 10,
+            },
+          },
         },
         y: {
           stacked: true,
           ticks: {
             color: "black",
+            font: {
+              size: 10,
+            },
           },
           grid: {
             borderDash: [5, 5],
           },
+        },
+      },
+      layout: {
+        padding: {
+          top: 10,
+          bottom: 10,
+          left: 10,
+          right: 10,
         },
       },
     },
