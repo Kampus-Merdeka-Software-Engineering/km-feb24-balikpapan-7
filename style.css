@@ -12,6 +12,11 @@ body {
   background-color: white;
 }
 
+main {
+height: 90vh;
+
+}
+
 h1 {
   margin-left: 45px;
   margin-top: 5vh;
@@ -284,6 +289,7 @@ h2 {
   width: 80%;
   margin: 0 auto;
   border-collapse: collapse;
+  text-align: center;
 }
 
 .dataTable th,
