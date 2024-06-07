@@ -85,26 +85,20 @@ document.addEventListener("DOMContentLoaded", async () => {
       data: data,
       searching: true,
       columns: [
-        { data: "date" },
-        { data: "day" },
-        { data: "month" },
-        { data: "year" },
-        { data: "age" },
-        { data: "age_group" },
-        { data: "gender" },
-        { data: "country" },
-        { data: "region" },
-        { data: "category" },
-        { data: "sub_category" },
-        { data: "product" },
-        { data: "quantity" },
-        { data: "cost" },
-        { data: "unit_price" },
-        { data: "sales" },
-        { data: "cost" },
-        { data: "cogs" },
+        { data: "Date" },
+        { data: "Customer_Age" },
+        { data: "Customer_Gender" },
+        { data: "Country" },
+        { data: "Product_Category" },
+        { data: "Sub_Category" },
+        { data: "Product" },
+        { data: "Order_Quantity" },
+        { data: "Profit" },
+        { data: "Cost" },
+        { data: "Revenue" },
       ],
-    });
+    }
+  );
   } catch (error) {
     console.error("Error fetching or processing data:", error);
   }
