@@ -97,8 +97,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         { data: "Cost" },
         { data: "Revenue" },
       ],
-    }
-  );
+    });
   } catch (error) {
     console.error("Error fetching or processing data:", error);
   }
