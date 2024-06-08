@@ -22,23 +22,16 @@ const createCategoryPieChart = async () => {
       labels: labels,
       datasets: [
         {
-          label: "Top Selling Product By Categories (Revenue)",
+          label: "Top Selling Product By Revenue",
           data: values,
-          borderWidth: 1,
         },
       ],
     },
     options: {
+      responsive: true,
       plugins: {
         legend: {
-          labels: {
-            color: "black",
-          },
-        },
-      },
-      scales: {
-        y: {
-          beginAtZero: true,
+          position: "right",
         },
       },
     },

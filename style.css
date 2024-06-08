@@ -10,23 +10,30 @@
 
 body {
   background-color: white;
-}
-
-main {
-height: 90vh;
-
+  padding-top: 5px;
 }
 
 h1 {
-  margin-left: 45px;
-  margin-top: 5vh;
-  font-weight: bolder;
+  font-size: 14px;
 }
 
 h2 {
   margin-left: 45px;
   margin-top: 3vh;
   margin-bottom: 3vh;
+}
+
+header {
+  margin-top: 1vh;
+  margin-bottom: 5vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  font-weight: bolder;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .box-parent {
@@ -38,12 +45,12 @@ h2 {
 
 .box {
   background-color: #f2f0fc;
-  border: 2px solid #21292e;
+  border: 2px solid blue;
   border-radius: 15px;
   width: 100%;
   height: 148px;
-  margin-left: 45px;
-  margin-right: 45px;
+  margin-left: 60px;
+  margin-right: 60px;
   text-align: center;
 }
 
@@ -51,7 +58,7 @@ h2 {
   color: black;
   text-align: center;
   align-items: center;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin: 10px auto;
 }
 
@@ -80,7 +87,7 @@ h2 {
   align-items: center;
   width: 100%;
   height: 65vh;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 
 .bottom-left-card,
@@ -98,25 +105,25 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: blue;
   color: white;
 }
 
 .bottom-left-card h2,
 .bottom-right-card h2 {
-  margin: 20px 0 10px 0;
+  margin: 15px 0 10px 0;
   color: white;
-  background-color: black;
+  background-color: blue;
   text-align: center;
 }
 
 .chart-wrapper {
-  width: 90%;
-  height: 65vh;
+  width: 80%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid #353535;
+  border: solid blue;
   background-color: #d1d9e4;
 }
 
@@ -127,11 +134,10 @@ h2 {
 }
 
 .filter {
-  width: 90%;
+  width: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* justify-content: space-between; */
 }
 
 .filter .sort {
@@ -151,7 +157,7 @@ h2 {
   border-radius: 5px;
   border: 1px solid #ccc;
   background-color: #fff;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .filter select {
@@ -166,7 +172,7 @@ h2 {
 }
 
 .filter input[type="checkbox"]:checked {
-  background-color: darkturquoise;
+  background-color: rgb(0, 17, 255);
 }
 
 .mid-container {
@@ -180,7 +186,7 @@ h2 {
 
 .pie-header {
   width: 90%;
-  background-color: black;
+  background-color: blue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -192,7 +198,7 @@ h2 {
 .gender-header h2,
 .age-header h2 {
   text-align: center;
-  margin: 20px 0 10px 0;
+  margin: 15px 0 10px 0;
 }
 
 .pie-chart {
@@ -202,40 +208,40 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border: solid #353535;
+  border: solid blue;
   background-color: #d1d9e4;
 }
 
 #category-revenue {
-  width: 50% !important;
-  height: auto;
-  margin-bottom: 40px;
+  height: 65vh !important;
 }
 
 .bottom-container {
-  margin-top: 10vh;
+  margin-top: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-.gender-container {
+.gender-container,
+.age-container {
   width: 90%;
-  height: 85vh;
-  margin-top: 3vh;
+  height: 70vh;
+  /* margin-top: 3vh; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-bottom: 10vh;
-  background-color: tomato;
+  background-color: #89acc9;
+  border: solid blue;
 }
 
 .gender-header,
 .age-header {
   width: 100%;
-  background-color: black;
+  background-color: blue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -248,26 +254,13 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 85vh;
-  border: solid #353535;
+  height: 65vh !important;
   background-color: #89acc9;
 }
 
-#gender-revenue {
-  width: 80% !important;
-  margin-bottom: 40px;
-}
-
-.age-container {
-  width: 90%;
-  height: 85vh;
-  margin-top: 3vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 10vh;
+#gender-revenue,
+#age-revenue {
+  width: 65vw !important;
 }
 
 /* datatable */
@@ -357,7 +350,7 @@ h2 {
 #genderCheckboxes label,
 #ageCheckboxes label {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 12px;
   display: block;
   color: black;
   padding: 4px;
@@ -398,6 +391,17 @@ h2 {
   height: 100%;
 }
 
+footer {
+  margin-top: 1vh;
+  padding-top: 2vh;
+  padding-bottom: 1vh;
+  font-weight: bolder;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
 /* Responsive styles */
 @media screen and (max-width: 768px) {
   .box-parent {
@@ -417,7 +421,7 @@ h2 {
   h1,
   h2 {
     margin-left: 50px;
-    font-size: 1.5em;
+    font-size: 12px;
   }
 
   .top-card {
@@ -439,7 +443,7 @@ h2 {
 }
 
 @media screen and (max-width: 540px) {
-  .filter{
+  .filter {
     flex-direction: column;
   }
 }
@@ -457,10 +461,9 @@ h2 {
     width: 50%;
   }
 
-  .gender-header {
-    padding: 2px;
-  }
-
+  .card-header,
+  .pie-header,
+  .gender-header,
   .age-header {
     padding: 2px;
   }
@@ -468,11 +471,18 @@ h2 {
   #category-revenue {
     width: 90% !important;
     height: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
-  #gender-revenue {
+  .age-container,
+  .gender-container {
     width: 90% !important;
-    margin-bottom: 40px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .gender-revenue,
+  .age-revenue {
+    width: 90% !important;
   }
 }
