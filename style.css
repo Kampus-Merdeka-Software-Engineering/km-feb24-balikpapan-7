@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 h2 {
@@ -33,7 +33,7 @@ header {
   background-color: black;
   color: white;
   font-weight: bold;
-  font-size: 20px;
+  font-size:20px;
 }
 
 .box-parent {
@@ -213,7 +213,7 @@ header {
 }
 
 #category-revenue {
-  height: 65vh !important;
+  height: 65vh !important;  
 }
 
 .bottom-container {
@@ -254,13 +254,13 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 65vh !important;
+  height: 60vh !important;
   background-color: #89acc9;
 }
 
 #gender-revenue,
 #age-revenue {
-  width: 65vw !important;
+  width: 60vw !important;
 }
 
 /* datatable */
