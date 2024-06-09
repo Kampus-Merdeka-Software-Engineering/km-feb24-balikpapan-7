@@ -129,3 +129,15 @@ const getColor = (label) => {
   };
   return colors[label];
 };
+
+function showContent() {
+  var topSellingBikes = document.getElementById("topSellingBikes");
+  var article = document.getElementById("article");
+
+  article.classList.remove("show");
+  setTimeout(function () {
+    article.style.display = "none";
+    topSellingBikes.style.display = "block";
+    topSellingBikes.classList.add("show");
+  }, 500);
+}
