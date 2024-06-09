@@ -21,7 +21,9 @@
   </head>
 
   <body>
-    <header><h1 style="font-size: 30px;">BIKE SALES DASHBOARD</h1></header>
+    <header>
+      <h1 style="text-align: center; font-size: 20px">BIKE SALES DASHBOARD</h1>
+    </header>
 
     <div class="container">
       <div class="box-parent">
@@ -519,104 +521,102 @@
     </div>
 
     <div class="bottom-container">
-      <div class="filter">
-        <div id="filteringByCategories">
-          <div class="container-filtering-gender">
-            <div class="multiselect multiSelectGender">
-              <div class="selectBoxGender">
-                <select>
-                  <option>Select Gender</option>
-                </select>
-                <div class="overSelect"></div>
-              </div>
-              <div id="genderCheckboxes">
-                <label for="female">
-                  <input
-                    type="checkbox"
-                    id="female"
-                    value="Female"
-                    checked
-                    name="female"
-                  />Female</label
-                >
-                <label for="male">
-                  <input
-                    type="checkbox"
-                    id="male"
-                    value="Male"
-                    checked
-                    name="male"
-                  />Male</label
-                >
+      <!-- Stacked BarChart -->
+        <div class="gender-header">
+          <h2>TOP SELLING PRODUCT BY GENDER (REVENUE)</h2>
+        </div>
+        <div class="filter">
+          <div id="filteringByCategories">
+            <div class="container-filtering-gender">
+              <div class="multiselect multiSelectGender">
+                <div class="selectBoxGender">
+                  <select>
+                    <option>Select Gender</option>
+                  </select>
+                  <div class="overSelect"></div>
+                </div>
+                <div id="genderCheckboxes">
+                  <label for="female">
+                    <input
+                      type="checkbox"
+                      id="female"
+                      value="Female"
+                      checked
+                      name="female"
+                    />Female</label
+                  >
+                  <label for="male">
+                    <input
+                      type="checkbox"
+                      id="male"
+                      value="Male"
+                      checked
+                      name="male"
+                    />Male</label
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- Stacked BarChart -->
-      <div class="gender-container">
-        <div class="gender-header">
-          <h2>TOP SELLING PRODUCT BY GENDER (REVENUE)</h2>
         </div>
         <div class="gender-chart">
           <canvas id="gender-revenue"></canvas>
         </div>
-      </div>
-      <div class="filter">
-        <div id="filteringByCategories">
-          <div class="container-filtering-age">
-            <div class="multiselect multiSelectAge">
-              <div class="selectBoxAge">
-                <select>
-                  <option>Select Age Group</option>
-                </select>
-                <div class="overSelect"></div>
-              </div>
-              <div id="ageCheckboxes">
-                <label for="Adults">
-                  <input
-                    type="checkbox"
-                    id="Adults"
-                    value="Adults (35-64)"
-                    checked
-                    name="Adults"
-                  />Adults (35-64)</label
-                >
-                <label for="Seniors">
-                  <input
-                    type="checkbox"
-                    id="Seniors"
-                    value="Seniors (64+)"
-                    checked
-                    name="Seniors"
-                  />Seniors (64+)</label
-                >
-                <label for="Young Adults">
-                  <input
-                    type="checkbox"
-                    id="Young Adults"
-                    value="Young Adults (25-34)"
-                    checked
-                    name="Young Adults"
-                  />Young Adults (25-34)</label
-                >
-                <label for="Youth">
-                  <input
-                    type="checkbox"
-                    id="Youth"
-                    value="Youth (&lt;25)"
-                    checked
-                    name="Youth"
-                  />Youth (&lt;25)</label
-                >
+    
+        <div class="age-header">
+          <h2>TOP SELLING PRODUCTS BY GROUP AGE (REVENUE)</h2>
+        </div>
+        <div class="filter">
+          <div id="filteringByCategories">
+            <div class="container-filtering-age">
+              <div class="multiselect multiSelectAge">
+                <div class="selectBoxAge">
+                  <select>
+                    <option>Select Age Group</option>
+                  </select>
+                  <div class="overSelect"></div>
+                </div>
+                <div id="ageCheckboxes">
+                  <label for="Adults">
+                    <input
+                      type="checkbox"
+                      id="Adults"
+                      value="Adults (35-64)"
+                      checked
+                      name="Adults"
+                    />Adults (35-64)</label
+                  >
+                  <label for="Seniors">
+                    <input
+                      type="checkbox"
+                      id="Seniors"
+                      value="Seniors (64+)"
+                      checked
+                      name="Seniors"
+                    />Seniors (64+)</label
+                  >
+                  <label for="Young Adults">
+                    <input
+                      type="checkbox"
+                      id="Young Adults"
+                      value="Young Adults (25-34)"
+                      checked
+                      name="Young Adults"
+                    />Young Adults (25-34)</label
+                  >
+                  <label for="Youth">
+                    <input
+                      type="checkbox"
+                      id="Youth"
+                      value="Youth (&lt;25)"
+                      checked
+                      name="Youth"
+                    />Youth (&lt;25)</label
+                  >
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="age-container">
-        <div class="age-header">
-          <h2>TOP SELLING PRODUCTS BY GROUP AGE (REVENUE)</h2>
         </div>
         <div class="age-chart">
           <canvas id="age-revenue" />
@@ -626,10 +626,10 @@
 
     <!-- DataTable -->
     <div class="datatable-container">
-      <div>
-        <h2>Europe Bike Sales Report</h2>
+      <div class="datatable-header">
+        <h2>EUROPE BIKE SALES REPORT</h2>
       </div>
-      <table id="dataTable" class="dataTable compact">
+      <table id="dataTable" class="dataTable compact" style="padding-top: 20px;">
         <thead>
           <tr>
             <th>Date</th>

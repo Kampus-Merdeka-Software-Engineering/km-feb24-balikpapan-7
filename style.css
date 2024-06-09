@@ -14,11 +14,10 @@ body {
 }
 
 h1 {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 h2 {
-  margin-left: 45px;
   margin-top: 3vh;
   margin-bottom: 3vh;
 }
@@ -28,12 +27,10 @@ header {
   margin-bottom: 5vh;
   padding-top: 2vh;
   padding-bottom: 2vh;
-  font-weight: bolder;
-  text-align: center;
   background-color: black;
   color: white;
   font-weight: bold;
-  font-size:20px;
+  font-size: 20px;
 }
 
 .box-parent {
@@ -44,7 +41,7 @@ header {
 }
 
 .box {
-  background-color: #f2f0fc;
+  background-color: #fafafa;
   border: 2px solid blue;
   border-radius: 15px;
   width: 100%;
@@ -52,13 +49,14 @@ header {
   margin-left: 60px;
   margin-right: 60px;
   text-align: center;
+  justify-content: space-between;
 }
 
 .box h2 {
   color: black;
   text-align: center;
   align-items: center;
-  /* font-weight: bold; */
+  font-weight: bold;
   margin: 10px auto;
 }
 
@@ -73,6 +71,7 @@ header {
 
 .upper-container {
   min-height: 80vh;
+  padding-bottom: 20px;
 }
 
 .top-card {
@@ -107,11 +106,12 @@ header {
   align-items: center;
   background-color: blue;
   color: white;
+  border-radius: 10px;
 }
 
 .bottom-left-card h2,
 .bottom-right-card h2 {
-  margin: 15px 0 10px 0;
+  margin: 10px 0 10px 0;
   color: white;
   background-color: blue;
   text-align: center;
@@ -123,8 +123,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid blue;
-  background-color: #d1d9e4;
+  border: 2px solid blue;
+  background-color: #fafafa;
+  border-radius: 10px;
 }
 
 #sub-category,
@@ -182,6 +183,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 
 .pie-header {
@@ -192,13 +194,16 @@ header {
   align-items: center;
   color: white;
   text-align: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .pie-header h2,
 .gender-header h2,
-.age-header h2 {
+.age-header h2 .datatable-header h2 {
   text-align: center;
   margin: 15px 0 10px 0;
+  border-radius: 10px;
 }
 
 .pie-chart {
@@ -208,12 +213,13 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  border: solid blue;
-  background-color: #d1d9e4;
+  border: 2px solid blue;
+  border-radius: 10px;
+  background-color: #fafafa;
 }
 
 #category-revenue {
-  height: 65vh !important;  
+  height: 65vh !important;
 }
 
 .bottom-container {
@@ -222,54 +228,62 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 
 .gender-container,
 .age-container {
   width: 90%;
   height: 70vh;
-  /* margin-top: 3vh; */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 10vh;
-  background-color: #89acc9;
-  border: solid blue;
+  margin-bottom: 10px;
+  background-color: #fafafa;
+  border: 2px solid blue;
+  border-radius: 10px;
 }
 
 .gender-header,
 .age-header {
-  width: 100%;
+  width: 90%;
   background-color: blue;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
 }
 
 .gender-chart,
 .age-chart {
+  width: 90%;
+  height: 60vh !important;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh !important;
-  background-color: #89acc9;
+  flex-direction: column;
+  margin-bottom: 10vh;
+  background-color: #fafafa;
+  border: 2px solid blue;
+  border-radius: 10px;
 }
 
 #gender-revenue,
 #age-revenue {
-  width: 60vw !important;
+  background-color: #fafafa;
 }
 
 /* datatable */
 .datatable-container {
-  margin-top: 3vh;
+  margin-top: 20px;
   max-width: 90%;
   margin: 0 auto;
   border-collapse: collapse;
-  margin-bottom: 5vh;
+  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -283,6 +297,19 @@ header {
   margin: 0 auto;
   border-collapse: collapse;
   text-align: center;
+}
+
+.datatable-header {
+  width: 100%;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .dataTable th,
@@ -394,7 +421,7 @@ header {
 footer {
   margin-top: 1vh;
   padding-top: 2vh;
-  padding-bottom: 1vh;
+  padding-bottom: 2vh;
   font-weight: bolder;
   text-align: center;
   background-color: black;
@@ -420,7 +447,7 @@ footer {
 
   h1,
   h2 {
-    margin-left: 50px;
+    text-align: center;
     font-size: 12px;
   }
 
@@ -444,6 +471,8 @@ footer {
 
 @media screen and (max-width: 540px) {
   .filter {
+    margin-top: 10px;
+    margin-bottom: 10px;
     flex-direction: column;
   }
 }
