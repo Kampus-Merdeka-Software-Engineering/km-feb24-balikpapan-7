@@ -232,6 +232,77 @@ h2 {
   height: 15vh;
 }
 
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 150px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 800px;
+  height: 150px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.card h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.card p {
+  margin: 0 0 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+/* Button styles */
+.card button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.card button:hover {
+  background-color: #404142;
+}
+
+.top-selling-bikes,
+.article {
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+.top-selling-bikes.show,
+.article.show {
+  opacity: 1;
+  visibility: visible;
+}
+.top-selling-bikes.hide,
+.article.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
 /* bar-chart */
 .bottom-card {
   display: flex;
