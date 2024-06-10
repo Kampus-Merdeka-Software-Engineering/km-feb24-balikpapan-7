@@ -130,14 +130,21 @@ const getColor = (label) => {
   return colors[label];
 };
 
-function showContent() {
-  var topSellingBikes = document.getElementById("topSellingBikes");
-  var article = document.getElementById("article");
+// Function for navigation
+$(document).ready(function() {
+  $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      e.stopPropagation();
+  });
 
-  article.classList.remove("show");
-  setTimeout(function () {
-    article.style.display = "none";
-    topSellingBikes.style.display = "block";
-    topSellingBikes.classList.add("show");
-  }, 500);
-}
+  $('html').click(function(){
+      $('.nav-dropdown').hide();
+  })
+  $('#nav-toggle').click(function(){
+      $('nav ul').slideToggle();
+  })
+  $('#nav-toggle').on('click', function(){
+      this.classList.toggle('active');
+  });
+});
+
