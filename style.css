@@ -167,8 +167,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  text-align: justify;
-  line-height: 1.8;
   align-items: center;
   border-radius: 10px;
   background-color: #fafafa;
@@ -176,12 +174,16 @@ h2 {
 
 .hero-article h1 {
   text-align: center;
+  color: blue;
   margin: 20px 0 10px 0;
   border-radius: 10px;
 }
-.h3 {
+.hero-article h2 {
   margin: 10px;
   padding: 10px;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 1.8;
   
 }
 
@@ -719,8 +721,10 @@ footer {
   h1 {
     font-size: 16px;
   }
-  h2 {
+  h2,
+  .hero-article h2 {
     text-align: center;
+    text-align: justify;
     font-size: 12px;
   }
 
